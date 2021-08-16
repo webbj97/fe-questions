@@ -15,6 +15,6 @@ git commit -m $msg
 
 # 推送流程
 
-git push -f git@github.com:webbj97/Questions.git master:gh-pages
+git push -f git@github.com:webbj97/fe-questions.git master:gh-pages
 
 cd -

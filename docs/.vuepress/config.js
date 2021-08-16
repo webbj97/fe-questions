@@ -1,7 +1,10 @@
 module.exports = {
     title: '前端闭关',
     description: 'lalala',
-    base: '/Questions/', // github仓库名
+    base: '/fe-questions/', // github仓库名
+    head: [
+        ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ],
     plugins: [
         '@vuepress/back-to-top',
     ],
