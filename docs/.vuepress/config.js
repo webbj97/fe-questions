@@ -24,6 +24,8 @@ module.exports = {
                     sidebarDepth: 2, // 可选的, 默认值是 1
                     children: [
                         '/warehouse/js/1',
+                        '/warehouse/js/2',
+                        '/warehouse/js/3',
                     ]
                 },
                 {
