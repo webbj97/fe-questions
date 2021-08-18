@@ -6,8 +6,8 @@ module.exports = {
         ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
     plugins: [
-        ['@vuepress/back-to-top', true],
-        ['vuepress-plugin-code-copy', true]
+        '@vuepress/back-to-top',
+        'vuepress-plugin-code-copy'
     ],
     themeConfig: {
         nav: [

@@ -4,7 +4,7 @@
     "build": "vuepress build docs"
   },
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-back-to-top": "^1.7.1",
     "node-sass": "^6.0.1",
     "sass-loader": "^12.1.0"
   },
