@@ -6,7 +6,8 @@ module.exports = {
         ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
     plugins: [
-        '@vuepress/back-to-top',
+        ['@vuepress/back-to-top', true],
+        ['vuepress-plugin-code-copy', true]
     ],
     themeConfig: {
         nav: [
@@ -26,6 +27,7 @@ module.exports = {
                         '/warehouse/js/1',
                         '/warehouse/js/2',
                         '/warehouse/js/3',
+                        '/warehouse/js/4',
                     ]
                 },
                 {
