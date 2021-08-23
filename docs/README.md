@@ -1,5 +1,6 @@
 ---
 home: true
+heroImage: /images/logo.gif
 actionText: 快速开始
 actionLink: /questions/
 features:
