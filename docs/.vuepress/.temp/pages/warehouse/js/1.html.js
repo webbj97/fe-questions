@@ -75,12 +75,12 @@ export const data = {
   ],
   "filePathRelative": "warehouse/js/1.md",
   "git": {
-    "updatedTime": 1629687493000,
+    "updatedTime": 1629720629000,
     "contributors": [
       {
         "name": "yuguang",
         "email": "yuguang@gaoding.com",
-        "commits": 9
+        "commits": 10
       },
       {
         "name": "赵媛",
@@ -89,17 +89,4 @@ export const data = {
       }
     ]
   }
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }

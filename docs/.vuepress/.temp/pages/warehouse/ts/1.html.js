@@ -8,20 +8,13 @@ export const data = {
   "headers": [],
   "filePathRelative": "warehouse/ts/1.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1629720629000,
+    "contributors": [
+      {
+        "name": "yuguang",
+        "email": "yuguang@gaoding.com",
+        "commits": 1
+      }
+    ]
   }
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }
