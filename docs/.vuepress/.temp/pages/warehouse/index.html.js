@@ -5,7 +5,26 @@ export const data = {
   "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
-  "headers": [],
+  "headers": [
+    {
+      "level": 2,
+      "title": "项目食用指南",
+      "slug": "项目食用指南",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "",
+      "slug": "",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "tip",
+      "slug": "tip",
+      "children": []
+    }
+  ],
   "filePathRelative": "warehouse/README.md",
   "git": {
     "updatedTime": 1629106883000,
@@ -17,4 +36,17 @@ export const data = {
       }
     ]
   }
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

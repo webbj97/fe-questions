@@ -3,29 +3,28 @@ export const data = {
   "path": "/",
   "title": "",
   "lang": "en-US",
-  "frontmatter": {
-    "home": true,
-    "heroImage": "/images/logo.gif",
-    "actionText": "快速开始",
-    "actionLink": "/questions/",
-    "features": [
-      {
-        "title": "题库",
-        "details": "这里有着前端基础——JavaScript最全面的基础总结，帮助你打牢前端基础！"
-      },
-      {
-        "title": "待新增",
-        "details": "啦啦啦"
-      },
-      {
-        "title": "待新增",
-        "details": "啦啦啦"
-      }
-    ],
-    "footer": "MIT Licensed | Copyright © 2021-present 余光"
-  },
+  "frontmatter": {},
   "excerpt": "",
-  "headers": [],
+  "headers": [
+    {
+      "level": 2,
+      "title": "项目食用指南",
+      "slug": "项目食用指南",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "",
+      "slug": "",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "tip",
+      "slug": "tip",
+      "children": []
+    }
+  ],
   "filePathRelative": "README.md",
   "git": {
     "updatedTime": 1629687493000,
@@ -37,4 +36,17 @@ export const data = {
       }
     ]
   }
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

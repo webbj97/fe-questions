@@ -50,8 +50,8 @@ export const data = {
     },
     {
       "level": 2,
-      "title": "flat - 扁平化",
-      "slug": "flat-扁平化",
+      "title": "flat",
+      "slug": "flat",
       "children": []
     },
     {
@@ -89,4 +89,17 @@ export const data = {
       }
     ]
   }
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }
