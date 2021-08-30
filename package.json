@@ -4,11 +4,19 @@
     "build": "vuepress build docs"
   },
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.7.1",
+    "@vue/component-compiler-utils": "^3.2.2",
     "node-sass": "^6.0.1",
-    "sass-loader": "^12.1.0"
+    "sass-loader": "^12.1.0",
+    "vue": "2.6.14",
+    "vue-template-compiler": "^2.6.14",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-plugin-demo-container": "^0.2.0"
   },
   "dependencies": {
+    "@vuepress/plugin-back-to-top": "^1.7.1",
+    "@vuepress/shared-utils": "^1.8.2",
+    "vue-loader": "^15.9.8",
     "vuepress-plugin-code-copy": "^1.0.6"
   }
 }
