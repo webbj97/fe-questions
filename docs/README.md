@@ -10,6 +10,8 @@
 
 ## 项目食用指南
 
+<Readme />
+
 * 手撕代码汇总
   + [push](/fe-questions/warehouse/js/1.html#push)
   + [pop](/fe-questions/warehouse/js/1.html#pop)

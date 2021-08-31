@@ -1,5 +1,7 @@
 <h1 align=center>前端闭关</h1>
 
+
+
 <p align="center">
     <img src="https://img.shields.io/badge/JavaScript-important"/>
     <img src="https://img.shields.io/badge/TypeScript-brightgreen"/>
@@ -10,6 +12,8 @@
 <p align=center>一份需要思考的前端闭关指南</p>
 
 ## 项目食用指南
+
+<Readme />
 
 * 手撕代码汇总
   + [push](/warehouse/js/1.html#push)
