@@ -1,6 +1,6 @@
 module.exports = {
     title: "前端闭关",
-    description: "lalala",
+    description: "闭关，慢慢来",
     base: "/fe-questions/", // github仓库名
     head: [
         ["link", { rel: "icon", href: "/favicon.ico" }]
