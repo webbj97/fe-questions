@@ -1,7 +1,5 @@
 <h1 align=center>前端闭关</h1>
 
-
-
 <p align="center">
     <img src="https://img.shields.io/badge/JavaScript-important"/>
     <img src="https://img.shields.io/badge/TypeScript-brightgreen"/>
@@ -13,7 +11,6 @@
 
 ## 项目食用指南
 
-<Readme />
 
 * 手撕代码汇总
   + [push](/warehouse/js/1.html#push)

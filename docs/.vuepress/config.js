@@ -5,10 +5,11 @@ module.exports = {
     head: [
         ["link", { rel: "icon", href: "/favicon.ico" }]
     ],
+    theme: 'antdocs', // ant风格主题
     plugins: [
         "@vuepress/back-to-top",
         "vuepress-plugin-code-copy",
-        'demo-container'
+        'demo-container',
     ],
     themeConfig: {
         nav: [
@@ -17,6 +18,17 @@ module.exports = {
         ],
         repo: "https://github.com/webbj97/fe-questions", // github仓库地址
         lastUpdated: true, // 最近更新
+        ads:{
+            style: 2,
+            speed: 3000,
+            items: [
+                {
+                    text: '更多前端知识点',
+                    image: 'https://hlgcdn.oss-cn-hangzhou.aliyuncs.com/hlg-ui/163046294481790/11.jpeg',
+                    link: '',
+                },
+            ]
+        },
         sidebar: {
             "/warehouse/": [{
                     title: "JavaScript", // 必要的

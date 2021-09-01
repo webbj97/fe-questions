@@ -1,4 +1,5 @@
 <h1 align=center>前端闭关</h1>
+
 <p align="center">
     <img src="https://img.shields.io/badge/JavaScript-important"/>
     <img src="https://img.shields.io/badge/TypeScript-brightgreen"/>
@@ -10,33 +11,22 @@
 
 ## 项目食用指南
 
+
 * 手撕代码汇总
-  + [push](/fe-questions/warehouse/js/1.html#push)
-  + [pop](/fe-questions/warehouse/js/1.html#pop)
-  + [every](/fe-questions/warehouse/js/1.html#every)
-  + [some](/fe-questions/warehouse/js/1.html#some)
-  + [filter](/fe-questions/warehouse/js/1.html#filter)
-  + [forEach](/fe-questions/warehouse/js/1.html#foreach)
-  + [flat](/fe-questions/warehouse/js/1.html#flat)
-  + [深浅拷贝](/fe-questions/warehouse/js/1.html#深浅拷贝)
-  + [bind](/fe-questions/warehouse/js/1.html#bind)
-  + [call](/fe-questions/warehouse/js/1.html#call)
-  + [apply](/fe-questions/warehouse/js/1.html#apply)
+  + [push](/warehouse/js/1.html#push)
+  + [pop](/warehouse/js/1.html#pop)
+  + [every](/warehouse/js/1.html#every)
+  + [some](/warehouse/js/1.html#some)
+  + [filter](/warehouse/js/1.html#filter)
+  + [forEach](/warehouse/js/1.html#foreach)
+  + [flat](/warehouse/js/1.html#flat)
+  + [深浅拷贝](/warehouse/js/1.html#深浅拷贝)
+  + [bind](/warehouse/js/1.html#bind)
+  + [call](/warehouse/js/1.html#call)
+  + [apply](/warehouse/js/1.html#apply)
 
 - 日常开发技巧
   - 待完善
-
-## 阅读模式
-
-- [x] JavaScript部分代码
-- [x] Css部分支持预览
-- [x] 待整理
-
-## 技术栈
-
-- ***Vue*** VuePress
-- ***Element-Ui***
-- ***ES 6 / 7***
 
 ## tip
 
