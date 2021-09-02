@@ -17,17 +17,19 @@ module.exports = {
             { text: "题库", link: "/warehouse/" },
         ],
         repo: "https://github.com/webbj97/fe-questions", // github仓库地址
-        lastUpdated: true, // 最近更新
-        ads:{
+        lastUpdated: '上次更新于', // 最近更新
+        ads: {
             style: 2,
             speed: 3000,
-            items: [
-                {
-                    text: '更多前端知识点',
-                    image: 'https://hlgcdn.oss-cn-hangzhou.aliyuncs.com/hlg-ui/163046294481790/11.jpeg',
-                    link: '',
-                },
-            ]
+            items: [{
+                text: '更多前端知识点',
+                image: 'https://hlgcdn.oss-cn-hangzhou.aliyuncs.com/hlg-ui/163046294481790/11.jpeg',
+                link: '',
+            }, ]
+        },
+        footer: {
+            createYear: 2021,
+            copyrightInfo: 'DokiMod Team | 本网站是粉丝作品，与 Team Salvato 无关 | hosted by <a href="https://vercel.com">Vercel</a> | powered by VuePress',
         },
         sidebar: {
             "/warehouse/": [{
