@@ -11,7 +11,6 @@
 
 ## 项目食用指南
 
-
 * 手撕代码汇总
   + [push](/warehouse/js/1.html#push)
   + [pop](/warehouse/js/1.html#pop)
@@ -24,11 +23,6 @@
   + [bind](/warehouse/js/1.html#bind)
   + [call](/warehouse/js/1.html#call)
   + [apply](/warehouse/js/1.html#apply)
-
-- 日常开发技巧
-  - 待完善
-
-##
 
 ## tip
 
