@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const obj = {
+            name: 'yg',
+            age: 100,
+            height: 200,
+            cal: {
+                a: 1,
+                b: 2
+            }
+        }
+
+        const newObj = shallow(obj);
+        const newObj1 = deepCopy(obj);
+
+        obj.cal.a = 100;
+
+        console.log('newObj:', newObj);
+        console.log('newObj1:', newObj1);
+        // 浅拷贝，只复制1层
+        function shallow(target) {
+            if (typeof target === "object" && target != null) {
+                const copy = target instanceof Array ? [] : {};
+                const keys = Object.keys(target);
+                for (let i = 0; i < keys.length; i++) {
+                    const key = keys[i]
+                    copy[key] = target[key]
+                }
+                return copy;
+            }
+            // 基本类型，直接返回，在传旨的那一刻已经复制了
+            return target
+        }
+
+        function deepCopy(target) {
+            if (typeof target === "object" && target != null) {
+                const copy = target instanceof Array ? [] : {};
+                const keys = Object.keys(target);
+                for (let i = 0; i < keys.length; i++) {
+                    const key = keys[i]
+                    copy[key] =
+                        typeof target[key] === "object"
+                            ? deepCopy(target[key])
+                            : target[key];
+                }
+                return copy;
+            }
+            // 基本类型，直接返回，在传旨的那一刻已经复制了
+            return target
+        }
+    </script>
+</body>
+
+</html>

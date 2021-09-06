@@ -21,4 +21,4 @@ module.exports = {
             children: ["/warehouse/sf/1"],
         },
     ],
-},
+}
