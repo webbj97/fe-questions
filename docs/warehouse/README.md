@@ -9,20 +9,13 @@
 </p>
 <p align=center>一份需要思考的前端闭关指南</p>
 
-## 项目食用指南
 
-* 手撕代码汇总
-  + [push](/warehouse/js/1.html#push)
-  + [pop](/warehouse/js/1.html#pop)
-  + [every](/warehouse/js/1.html#every)
-  + [some](/warehouse/js/1.html#some)
-  + [filter](/warehouse/js/1.html#filter)
-  + [forEach](/warehouse/js/1.html#foreach)
-  + [flat](/warehouse/js/1.html#flat)
-  + [深浅拷贝](/warehouse/js/1.html#深浅拷贝)
-  + [bind](/warehouse/js/1.html#bind)
-  + [call](/warehouse/js/1.html#call)
-  + [apply](/warehouse/js/1.html#apply)
+
+## 项目食用指南 <span style="font-size: 16px;color: #aaa">为了方便大家快速浏览，下面整合了题库内所有存在的标签页～</span>
+
+
+
+<Navmap />
 
 ## tip
 

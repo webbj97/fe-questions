@@ -10,7 +10,10 @@ module.exports = {
         {
             title: "Css", // 必要的
             sidebarDepth: 3,
-            children: ["/warehouse/css/1"],
+            children: [
+                "/warehouse/css/1",
+                "/warehouse/css/2"
+            ],
         },
         {
             title: "网络", // 必要的
