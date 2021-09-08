@@ -5,6 +5,7 @@ module.exports = {
                 "/warehouse/js/1",
                 "/warehouse/js/2",
                 "/warehouse/js/3",
+                "/warehouse/js/4",
             ],
         },
         {
