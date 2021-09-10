@@ -8,56 +8,28 @@
 </head>
 
 <body>
-    <script>
-        const obj = {
-            name: 'yg',
-            age: 100,
-            height: 200,
-            cal: {
-                a: 1,
-                b: 2
-            }
-        }
 
-        const newObj = shallow(obj);
-        const newObj1 = deepCopy(obj);
+<!--
+* 实现复制到剪切版
+* 将字符串复制到剪贴板。仅作为用户操作的结果（即在click事件侦听器内）起作用。
+* 创建一个新<textarea>元素，用提供的数据填充它并将其添加到 HTML 文档中。
+* 使用Selection.getRangeAt()存储选择的范围（如果有的话）。
+* 使用Document.execCommand('copy')复制到剪贴板。
+* <textarea>从 HTML 文档中删除该元素。
+* 最后，用于Selection().addRange()恢复原始选定范围（如果有）。
+* 注意：使用新的异步剪贴板 API 可以轻松实现相同的功能，该 API 仍处于实验阶段，但应在将来使用，而不是此代码段。在此处了解更多信息。
+-->
 
-        obj.cal.a = 100;
+<div id="copy">我是要复制的文字</div>
 
-        console.log('newObj:', newObj);
-        console.log('newObj1:', newObj1);
-        // 浅拷贝，只复制1层
-        function shallow(target) {
-            if (typeof target === "object" && target != null) {
-                const copy = target instanceof Array ? [] : {};
-                const keys = Object.keys(target);
-                for (let i = 0; i < keys.length; i++) {
-                    const key = keys[i]
-                    copy[key] = target[key]
-                }
-                return copy;
-            }
-            // 基本类型，直接返回，在传旨的那一刻已经复制了
-            return target
-        }
+<script>
+    function copyToClipboard(){
+        const dom = document.querySelector('#id');
+        const innerHtml = dom.innerHTML;
+        bool = document.execCommand(aCommandName, aShowDefaultUI, aValueArgument)
+    }
 
-        function deepCopy(target) {
-            if (typeof target === "object" && target != null) {
-                const copy = target instanceof Array ? [] : {};
-                const keys = Object.keys(target);
-                for (let i = 0; i < keys.length; i++) {
-                    const key = keys[i]
-                    copy[key] =
-                        typeof target[key] === "object"
-                            ? deepCopy(target[key])
-                            : target[key];
-                }
-                return copy;
-            }
-            // 基本类型，直接返回，在传旨的那一刻已经复制了
-            return target
-        }
-    </script>
+</script>
 </body>
 
 </html>
