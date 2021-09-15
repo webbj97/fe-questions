@@ -9,6 +9,13 @@ module.exports = {
             ],
         },
         {
+            title: "TypeScript", // 必要的
+            sidebarDepth: 3,
+            children: [
+                "/warehouse/ts/1",
+            ],
+        },
+        {
             title: "Css", // 必要的
             sidebarDepth: 3,
             children: [

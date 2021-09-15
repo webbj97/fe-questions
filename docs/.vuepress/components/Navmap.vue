@@ -81,8 +81,9 @@ export default {
               return v;
             });
           return group;
-        });
+        }).sort();
       this.pages = pages;
+      console.log(this.pages);
     },
     onClick({newUrl}) {
       window.open(newUrl)
