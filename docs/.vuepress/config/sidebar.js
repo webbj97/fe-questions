@@ -27,9 +27,14 @@ module.exports = {
             title: "网络", // 必要的
             children: ["/warehouse/network/1"],
         },
-        {
-            title: "算法", // 必要的
-            children: ["/warehouse/sf/1"],
-        },
     ],
+    "/algorithm/": [
+        {
+            title: "经典思想", // 必要的
+            children: [
+                "/algorithm/knows/1",
+                "/algorithm/knows/2"
+            ],
+        },
+    ]
 }

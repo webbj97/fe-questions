@@ -1,28 +1,25 @@
-function equals(a, b) {
-    // 基本类型、null、undefined
-    if (a === b) return true;
-    // Date
-    if (a instanceof Date && b instanceof Date) {
-        return a.getTime() === b.getTime();
-    }
-    // 空 或 null
-    if (!a || !b || (typeof a !== 'object' && typeof b !== 'object')) {
-        return a === b;
-    }
-    const keysA = Object.keys(a);
-    const keysB = Object.keys(b);
-    // 属性数量不一致
-    if (keysA.length !== keysB.length) return false;
-    return keysA.every(key => equals(a[key], b[key]))
+const arr = [
+    ['A', 'B', 100],
+    ['A', 'C', 200],
+    ['A', 'D', 300],
+    ['B', 'E', 400],
+    ['C', 'F', 300],
+    ['D', 'E', 150],
+]
+
+function min(arr) {
+    // 获取结束->起始重合的组合
+    let group = []
+    group = arr.map(e => {
+        const [ss, ee, dd] = e;
+        const next = arr.find(([start, end, dis]) => ee === start);
+        if(next){
+            const [, end, dis] = next;
+            return [ss, end, dd + dis, `${ss}->${ee}->${end}`]
+        }
+        return e;
+    });
+    console.log(group);
 }
 
-let a = {
-    name: 1,
-    age: [1, 2, 3, 4]
-}
-let b = {
-    name: 1,
-    age: [1, 2, 3]
-}
-const res = equals(a, b);
-console.log('res:', res);
+min(arr)
