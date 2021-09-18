@@ -30,22 +30,22 @@ module.exports = {
     ],
     "/algorithm/": [
         {
-            title: "剑指offer", // 必要的
-            path: '/algorithm/offer/',
-            children: [
-                "/algorithm/offer/1",
-            ],
-        },
-        {
             title: "算法思想", // 必要的
             children: [
                 "/algorithm/knows/1"
             ],
         },
         {
+            title: "剑指offer", // 必要的
+            children: [
+                "/algorithm/offer/1",
+            ],
+        },
+        {
             title: "LeetCode题库", // 必要的
             children: [
-                "/algorithm/leetcode/不同路径", // 62
+                "/algorithm/leetcode/62", // 不同路径
+                "/algorithm/leetcode/509", // 斐波那契
             ],
         },
     ]
