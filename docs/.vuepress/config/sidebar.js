@@ -43,10 +43,7 @@ module.exports = {
         },
         {
             title: "LeetCode题库", // 必要的
-            children: [
-                "/algorithm/leetcode/62", // 不同路径
-                "/algorithm/leetcode/509", // 斐波那契
-            ],
+            children: require('./leetcode')
         },
     ]
 }
