@@ -2,8 +2,17 @@
 <template>
     <div class="readme">
         <div class="readme__items" v-for="item in pages" :key="item.key">
-            <h4 class="title">{{ item.title }}</h4>
-            <div class="contents">
+            <template v-if="!item.heads || item.heads.length === 0">
+                <a
+                    :href="item.path"
+                >
+                    {{ item.title }}
+                </a>
+            </template>
+            <template v-else>
+                <h4 class="title">{{ item.title }}</h4>
+            </template>
+            <div class="contents" v-if="item.heads && item.heads.length">
                 <Button
                     v-for="(item, i) in item.heads"
                     :key="i"
@@ -30,6 +39,12 @@ export default {
             pages: [],
         };
     },
+    props: {
+        text:{
+            type: String,
+            default: ''
+        }
+    },
     components: {
         Button,
         PageHeader,
@@ -50,14 +65,15 @@ export default {
     methods: {
         // 分模块加载导航
         initSite() {
-            const { scope, page } = this;
+            const { scope, page, text } = this;
             const { regularPath } = page; // 当前主模块
+            const Reg = text || regularPath; // 指定分类
             const pages = scope.pages
                 .filter(
                     (v) =>
                         v.title &&
-                        v.regularPath.indexOf(regularPath) !== -1 &&
-                        v.regularPath !== regularPath
+                        v.regularPath.indexOf(Reg) !== -1 &&
+                        v.regularPath !== Reg
                 )
                 .map((item) => {
                     item.heads = [...(item.headers || [])]
@@ -74,6 +90,7 @@ export default {
                 .sort();
 
             this.pages = pages;
+            console.log('tis:', this.pages);
         },
         onClick({ newUrl }) {
             window.open(newUrl);
