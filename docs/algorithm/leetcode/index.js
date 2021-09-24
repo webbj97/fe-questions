@@ -1,21 +1,27 @@
-/**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
- */
-/**
- * @param {ListNode} hcead
- * @return {number[]}
- */
-var reversePrint = function (head) {
-    const arr = [];
-    const node = head
-    while(node){
-        arr.push(node.val);
-        node = node.next;
-    }
-    // 反转
-    return arr.reverse();
-};
+
+const a = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('a');
+        }, 3000);
+    })
+}
+
+const b = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('b');
+        }, 2000);
+    })
+}
+
+const c = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('c');
+        }, 1000);
+    })
+}
+
+
+const [aa, bb, cc] = Promise.all([a, b, c])

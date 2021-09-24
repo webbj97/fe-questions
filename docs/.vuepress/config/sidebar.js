@@ -46,8 +46,12 @@ module.exports = {
             children: [
                 "/algorithm/leetcode/62", // 不同路径
                 "/algorithm/leetcode/63", // 不同路径II
-                "/algorithm/leetcode/240", // 不同路径
+                // "/algorithm/leetcode/240", // 不同路径
                 "/algorithm/leetcode/509", // 斐波那契
+                "/algorithm/leetcode/offer03", // 斐波那契
+                "/algorithm/leetcode/offer04", // 斐波那契
+                "/algorithm/leetcode/offer05", // 斐波那契
+                "/algorithm/leetcode/offer06", // 斐波那契
             ]
         },
     ]

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            Array.prototype._find = function(fn, target) {
+                const items = target || this;
+                for (let i = 0; i < items.length; i++) {
+                    const cur = items[i];
+                    const index = i;
+                    const arr = items;
+                    if (fn(cur, index, arr)) {
+                        return cur;
+                    }
+                }
+                return undefined;
+            };
+
+            const res = [1, 2, 3, 4]._find((v) => v === 1);
+        </script>
+    </body>
+</html>
