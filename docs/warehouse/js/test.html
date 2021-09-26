@@ -8,30 +8,21 @@
     </head>
     <body>
         <script>
-            function dp(m, n) {
-                const arr = new Array(m).fill(new Array(n).fill(1));
-                console.log("arr:", arr);
-                for (let i = 1; i < m; i++) {
-                    for (let j = 1; j < n; j++) {
-                        const top = arr[i][j - 1];
-                        const left = arr[i - 1][j];
-                        const cur = arr[i - 1][j] + arr[i][j - 1];
-                        arr[i][j] = cur;
-                        console.log("(", i, ",", j, ")");
-                        console.log(
-                            "左侧的值:",
-                            left,
-                            "上方的值:",
-                            top,
-                            "当前的值:",
-                            arr[i][j]
-                        );
-                    }
-                }
-                console.log("arr:", arr);
-                return arr[m - 1][n - 1];
+            // 基本定时
+            // function sleep(callback, wait) {
+            //     setTimeout(callback, wait);
+            // }
+
+            function sleep(wait) {
+                return new Promise((resolve) => setTimeout(resolve, wait));
             }
-            dp(4, 3)
+
+            async function test() {
+                console.log('1');
+                await sleep(3000);
+                console.log('2');
+            }
+            test(); 
         </script>
     </body>
 </html>
