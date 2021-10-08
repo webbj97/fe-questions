@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=`, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const lo = window.location;
+            console.log("lo:", lo);
+
+            const isNotEmpty = (arr) => Array.isArray(arr) && arr.length > 0;
+            console.log("test1:", isNotEmpty([1]));
+            console.log("test1:", isNotEmpty([]));
+            console.log("------:");
+
+            const reverseStr1 = (str) =>
+                str
+                    .split("")
+                    .reverse()
+                    .join("");
+            const reverseStr2 = (str) => {
+                let res = "";
+                const len = str.length;
+                for (let i = 0; i < len; i++) {
+                    const index = len - 1 - i;
+                    res += str[index];
+                }
+                return res;
+            };
+            console.log("test1:", reverseStr1("hello world"));
+            console.log("test2:", reverseStr2("hello world"));
+            console.log("------:");
+
+            Object._entries = (obj) => {
+                const keys = Object.keys(obj);
+                const resArray = [];
+                for (let i = 0; i < keys.length; i++) {
+                    const cur = keys[i];
+                    resArray.push([cur, obj[cur]]);
+                }
+                return resArray;
+            };
+        </script>
+    </body>
+</html>
