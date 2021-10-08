@@ -16,10 +16,10 @@
 
 1. ✅[剑指Offer（03）数组中重复的数字](./leetcode/offer03.md)
 2. ✅[剑指Offer（04）二维数组中的查找](./leetcode/offer04.md)
-3. ❎[剑指Offer（11）旋转数组的最小数字](./leetcode/offer11.md)
-4. 剑指Offer（十三）--调整数组顺序使奇数位于偶数前面
-5. 剑指Offer（十九）-- 顺时针打印矩阵
-6. 剑指Offer（二十八）-- 数组中次数出现超过一半的数字
+3. ❌[剑指Offer（11）旋转数组的最小数字](./leetcode/offer11.md)
+4. ✅[剑指Offer（21）调整数组顺序使奇数位于偶数前面](./leetcode/offer21.md)
+5. ✅[剑指Offer（29）顺时针打印矩阵](./leetcode/offer29.md)
+6. ✅[剑指Offer（39）数组中出现次数超过一半的数字](./leetcode/offer39.md)
 7. 剑指Offer（三十）-- 连续子数组的最大和
 8. 剑指Offer（三十五）-- 数组中的逆序对
 9. 剑指Offer（三十七）-- 数字在升序数组中出现的次数
@@ -31,7 +31,7 @@
 
 1. ✅[剑指Offer（05）替换空格](./leetcode/offer05.md)
 2. 剑指Offer（二十七）-- 字符串的排序
-3. 剑指Offer（三十四）-- 第一个只出现一次的字符
+3. ✅[剑指Offer（50）第一个只出现一次的字符](./leetcode/offer50.md)
 4. 剑指Offer（四十三）--左旋转字符串
 5. 剑指Offer（四十四）-- 翻转单词序列
 6. 剑指Offer（四十四）-- 翻转单词序列（不调用API）
@@ -53,7 +53,7 @@
 
 ### 栈和队列
 
-1. 剑指Offer（八）--用两个栈实现队列
+1. ❌[剑指Offer（9）用两个栈实现队列](./leetcode/offer09.md)
 2. 剑指Offer（二十）-- 包含min函数的栈
 3. 剑指Offer（二十一）-- 栈的压入，弹出序
 
