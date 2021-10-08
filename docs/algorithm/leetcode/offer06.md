@@ -11,6 +11,8 @@
 
 **代码：**
 
+时间复杂度O(n)，空间复杂度O(n)
+
 ```js
 /**
  * Definition for singly-linked list.
@@ -37,6 +39,8 @@ var reversePrint = function (head) {
 
 **代码：入栈**
 
+时间复杂度O(n)，空间复杂度O(n)
+
 ```js
 var reversePrint = function (head) {
     const arr = [];
@@ -52,5 +56,25 @@ var reversePrint = function (head) {
         i--;
     }
     return res;
+};
+```
+
+** 递归 **
+
+```js
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {number[]}
+ */
+var reversePrint = function(head) {
+    if(head == null) return [];
+    else return [...reversePrint(head.next),head.val];
 };
 ```

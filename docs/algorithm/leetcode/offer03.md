@@ -17,6 +17,8 @@
 
 **代码：排序**
 
+时间复杂度O(nlogn)
+
 ```js
 var findRepeatNumber = function (nums) {
     // 数组排序，如果存在重复项，则一定相邻
@@ -33,6 +35,7 @@ var findRepeatNumber = function (nums) {
 
 **代码：键值对**
 
+时间复杂度O(n)，空间复杂度O(n)
 十分语义化
 
 ```js
@@ -46,6 +49,32 @@ var findRepeatNumber = function (nums) {
         } else {
             // 找到重复项
             return nums[i];
+        }
+    }
+};
+```
+
+
+**原地交换**
+
+利用题中长度为n的数组，数字在0~n-1之间这个特性，使用原数组来进行解题，遍历数组，如果arr[i] != i，那么去访问arr[arr[i]]，如果不相等arr[i]!=arr[arr[i]]，那么将它们俩原地交换，如果相等，那说明已经出现过了，则返回就好了。
+此时 时间复杂度O(n)，空间复杂度O(1)
+
+```js
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var findRepeatNumber = function(nums) {
+    for(let i = 0 ; i < nums.length ; i++){
+        while(nums[i] != i){
+            let cur = nums[i];
+            if(nums[cur] == nums[i]){
+                return nums[i];
+            }else{
+                nums[i] = nums[cur];
+                nums[cur] = cur;
+            }
         }
     }
 };
