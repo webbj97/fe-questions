@@ -8,20 +8,7 @@
     </head>
     <body>
         <script>
-            Array.prototype._find = function(fn, target) {
-                const items = target || this;
-                for (let i = 0; i < items.length; i++) {
-                    const cur = items[i];
-                    const index = i;
-                    const arr = items;
-                    if (fn(cur, index, arr)) {
-                        return cur;
-                    }
-                }
-                return undefined;
-            };
-
-            const res = [1, 2, 3, 4]._find((v) => v === 1);
+            const arr = [1, 2, 3, 4, 5];
         </script>
     </body>
 </html>
