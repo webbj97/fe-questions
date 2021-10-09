@@ -44,17 +44,17 @@
 
 1. ✅[剑指Offer（06）从尾到头打印链表](./leetcode/offer06.md)
 2. 剑指Offer（十四）--链表中倒数第k个节点
-3. 剑指Offer（十五）-- 反转链表
+3. ✅[剑指Offer（24）反转链表](./leetcode/offer24.md)
 4. 剑指Offer（十六）-- 合并两个排序的链表
-5. 剑指Offer（二十五）-- 复杂链表的复制
+5. ❌[剑指Offer（35）复杂链表的复制](./leetcode/offer35.md)
 6. 剑指Offer（三十六）-- 两个链表的第一个公共节点
 7. 剑指Offer（五十五）-- 链表中环的入口节点
 8. 剑指Offer（五十六）-- 删除链表中重复的元素
 
 ### 栈和队列
 
-1. ❌[剑指Offer（9）用两个栈实现队列](./leetcode/offer09.md)
-2. 剑指Offer（二十）-- 包含min函数的栈
+1. ✅[剑指Offer（9）用两个栈实现队列](./leetcode/offer09.md)
+2. ✅[剑指Offer（30）包含min函数的栈](./leetcode/offer30.md)
 3. 剑指Offer（二十一）-- 栈的压入，弹出序
 
 ### 堆
@@ -116,9 +116,3 @@
 7. 剑指Offer（四十六）-- 最后出圈的士兵（约瑟夫）
 8. 剑指Offer（四十七）-- 1+2+...+n的求和（不使用循环或者乘法）
 9. 剑指Offer（六十七）-- 剪绳子
-
-<!-- LeetCode 用题号标注 -->
-
-## LeetCode题库
-
-<Navmap text="leetcode" />

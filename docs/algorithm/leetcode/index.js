@@ -1,61 +1,22 @@
-var CQueue = function () {
-    this.stock1 = [];
-    this.stock2 = [];
-};
-
-/** 
- * @param {number} value
- * @return {void}
- */
-CQueue.prototype.appendTail = function (value) {
-    console.log('value:', value);
-    console.log('this:', this.stock1);
-    console.log('aa:', this.stock2);
-};
-
 /**
- * @return {number}
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
  */
-CQueue.prototype.deleteHead = function () {
-
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+var reverseList = function(head) {
+    let cur = head;
+    let prev = null; // 前置节点（新的尾节点）
+    while(cur){
+        let temp = cur.next; //  承接下一个节点
+        cur.next = prev; // 反转方向
+        prev = cur; // 更新尾节点
+        cur = temp; // 更新当前节点
+    }
 };
 
-var obj = new CQueue()
-obj.appendTail(1)
-
-/**
- * Your CQueue object will be instantiated and called as such:
- * var obj = new CQueue()
- * obj.appendTail(value)
- * var param_2 = obj.deleteHead()
- */
-
-
-// lass CQueue {
-//     Deque < Integer > stack1;
-//     Deque < Integer > stack2;
-
-//     public CQueue() {
-//         stack1 = new LinkedList < Integer > ();
-//         stack2 = new LinkedList < Integer > ();
-//     }
-
-//     public void appendTail(int value) {
-//         stack1.push(value);
-//     }
-
-//     public int deleteHead() {
-//         // 如果第二个栈为空
-//         if (stack2.isEmpty()) {
-//             while (!stack1.isEmpty()) {
-//                 stack2.push(stack1.pop());
-//             }
-//         }
-//         if (stack2.isEmpty()) {
-//             return -1;
-//         } else {
-//             int deleteItem = stack2.pop();
-//             return deleteItem;
-//         }
-//     }
-// }
