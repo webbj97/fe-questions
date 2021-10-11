@@ -16,7 +16,7 @@
 0 <= s 的长度 <= 10000
 ```
 
-**代码：数组方法**
+**数组方法**
 
 ```js
 /**
@@ -25,5 +25,13 @@
  */
 var replaceSpace = function (s) {
     return s.split('').map(v => v === ' ' ? '%20' : v).join('')
+};
+```
+
+**正则**
+
+```js
+var replaceSpace = function (s) {
+    return s.replace(/\s/g, '%20')
 };
 ```
