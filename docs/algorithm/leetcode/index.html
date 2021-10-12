@@ -8,7 +8,17 @@
     </head>
     <body>
         <script>
-            const arr = [1, 2, 3, 4, 5];
+            function download() {
+                const a = document.createElement("a");
+                a.style.display = "none";
+                const blob = new Blob([str]);
+                a.href = URL.createObjectURL(blob);
+                // 触发点击
+                document.body.appendChild(a);
+                a.click();
+                // 然后移除
+                document.body.removeChild(a);
+            }
         </script>
     </body>
 </html>

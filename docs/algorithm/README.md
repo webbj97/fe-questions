@@ -16,11 +16,12 @@
 
 1. ✅[剑指Offer（03）数组中重复的数字](./leetcode/offer03.md)
 2. ✅[剑指Offer（04）二维数组中的查找](./leetcode/offer04.md)
-3. ❌[剑指Offer（11）旋转数组的最小数字](./leetcode/offer11.md)
+3. ✅[剑指Offer（11）旋转数组的最小数字](./leetcode/offer11.md)
 4. ✅[剑指Offer（21）调整数组顺序使奇数位于偶数前面](./leetcode/offer21.md)
 5. ✅[剑指Offer（29）顺时针打印矩阵](./leetcode/offer29.md)
 6. ✅[剑指Offer（39）数组中出现次数超过一半的数字](./leetcode/offer39.md)
 7. ❌[剑指Offer（53-1）在排序数组中查找数字I](./leetcode/offer53-1.md)
+8. ✅[剑指Offer（53-2）0～n-1中缺失的数字](./leetcode/offer53-2.md)
 9. 剑指Offer（三十）-- 连续子数组的最大和
 10. 剑指Offer（三十五）-- 数组中的逆序对
 11. 剑指Offer（三十七）-- 数字在升序数组中出现的次数
@@ -79,7 +80,7 @@
 
 ### 排序
 
-1. 剑指Offer（三十二）-- 将数组排成最小的数
+1. ❌[剑指Offer（45）把数组排成最小的数](./leetcode/offer45.md)
 
 ### 位运算
 
