@@ -18,6 +18,8 @@
 
 1. 统计每个字母出现的次数
 2. 第二次遍历，寻找出现1次的第一个字母
+时间复杂度O(n),空间复杂度O(1)
+
 
 ```js
 var firstUniqChar = function(s) {
@@ -32,7 +34,7 @@ var firstUniqChar = function(s) {
             obj[key]++;
         }
     }
-    const keys = Object.keys(obj);
+    const keys = Object.keys(obj);  // Object.keys()当键值是string类型，遍历顺序是按照加入顺序
     const item = keys.find(key => obj[key] === 1)
     return item ? item : ' ';
 };
@@ -42,3 +44,20 @@ var firstUniqChar = function(s) {
 
 1. 遇到第一次出现的字母，就保存起来
 2. 如果下一个字母已经被保存过，就剔除
+
+**遍历**
+
+使用api
+时间复杂度O(n2)？
+
+```js
+var firstUniqChar = function(s) {
+    for(let i=0;i<s.length;i++){
+        const char = s[i];
+        if(s.indexOf(char) === s.lastIndexOf(char)){
+            return char;
+        }
+    }
+    return " "
+};
+```
