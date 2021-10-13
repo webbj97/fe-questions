@@ -13,7 +13,7 @@
 
 
 * 手撕代码汇总
-  + [push](/warehouse/js/1.html#push)
+  + [push](./docs/warehouse/js/1.md#pop)
   + [pop](/warehouse/js/1.html#pop)
   + [every](/warehouse/js/1.html#every)
   + [some](/warehouse/js/1.html#some)
