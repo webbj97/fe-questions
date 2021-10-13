@@ -1,31 +1,20 @@
 /**
  * @param {number[]} nums
- * @return {number}
+ * @param {number} target
+ * @return {number[]}
  */
-var missingNumber = function (nums) {
-    const len = nums.length;
-    let left = 0;
-    let right = nums.length - 1;
-    while (left <= right) {
-        const mid = Math.floor((left + right) / 2);
-        if(nums[mid] === mid){
-            left = mid + 1;
-            // 相等代表右侧递增，不缺失
-        }else{
-            right = mid - 1; // 右侧缺失
+var twoSum = function (nums, target) {
+    let i = 0;
+    let j = nums.length - 1;
+    while (i < j) {
+        if (nums[i] + nums[j] > target) {
+            j--;
+        } else if (nums[i] + nums[j] < target) {
+            i++;
+        } else {
+            return [nums[i], nums[j]]
         }
     }
-    return left;
 };
 
-
-console.log(':', missingNumber([0]));
-
-// class Solution:
-//     def missingNumber(self, nums: List[int]) -> int:
-//         i, j = 0, len(nums) - 1
-//         while i <= j:
-//             m = (i + j) // 2
-//             if nums[m] == m: i = m + 1
-//             else: j = m - 1
-//         return i
+console.log('twoSum():', twoSum([10, 26, 30, 31, 47, 60], 40));

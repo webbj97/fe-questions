@@ -11,22 +11,40 @@
 
 ## 项目食用指南
 
+### 手撕代码汇总
 
-* 手撕代码汇总
-  + [push](./docs/warehouse/js/1.md#pop)
-  + [pop](/warehouse/js/1.html#pop)
-  + [every](/warehouse/js/1.html#every)
-  + [some](/warehouse/js/1.html#some)
-  + [filter](/warehouse/js/1.html#filter)
-  + [forEach](/warehouse/js/1.html#foreach)
-  + [flat](/warehouse/js/1.html#flat)
-  + [深浅拷贝](/warehouse/js/1.html#深浅拷贝)
-  + [bind](/warehouse/js/1.html#bind)
-  + [call](/warehouse/js/1.html#call)
-  + [apply](/warehouse/js/1.html#apply)
+* 数组方法实现
+  1. [push](./docs/warehouse/js/1.md#push)
+  2. [pop](./docs/warehouse/js/1.md#pop)
+  3. [every](./docs/warehouse/js/1.md#every)
+  4. [some](./docs/warehouse/js/1.md#some)
+  5. [filter](./docs/warehouse/js/1.md#filter)
+  6. [forEach](./docs/warehouse/js/1.md#foreach)
+  7. [find](./docs/warehouse/js/1.md#find)
+  8. [flat](./docs/warehouse/js/1.md#flat)
+  9. [includes](./docs/warehouse/js/1.md#includes)
+  10. [empty(检验空数组)](./docs/warehouse/js/1.md#empty)
+* 对象方法实现
+  1. [deepclone(深浅拷贝)](./docs/warehouse/js/1.md#deepclone)
+  2. [entries](./docs/warehouse/js/1.md#entries)
+* 函数方法实现
+  1. [call](./docs/warehouse/js/1.md#call)
+  2. [apply](./docs/warehouse/js/1.md#apply)
+  3. [bind](./docs/warehouse/js/1.md#bind)
+  4. [equals(对象是否相等)](./docs/warehouse/js/1.md#equals)
+  5. [compose(组合函数)](./docs/warehouse/js/1.md#compose)
+  6. [pipe(管道函数)](./docs/warehouse/js/1.md#pipe)
+  7. [fibonacci(斐波那契)](./docs/warehouse/js/1.md#fibonacci)
+  8. [debounce(防抖)](./docs/warehouse/js/1.md#debounce)
+  9. [throttle(节流)](./docs/warehouse/js/1.md#throttle)
+  10. [sleep(睡眠)](./docs/warehouse/js/1.md#sleep)
+* 字符串方法实现
+  1. [solution](./docs/warehouse/js/1.md#solution)
+  2. [reverseStr(反转字符串)](./docs/warehouse/js/1.md#reverseStr)
 
-- 日常开发技巧
-  - 待完善
+### 剑指Offer
+
+[跳转至目录](./docs/algorithm/README.md)
 
 ## tip
 
