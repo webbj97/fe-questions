@@ -1,6 +1,6 @@
 module.exports = {
     "/warehouse/": [{
-            title: "JavaScript", // 必要的
+            title: "JS高频手撕代码", // 必要的
             children: [
                 "/warehouse/js/1",
                 "/warehouse/js/2",
@@ -30,6 +30,12 @@ module.exports = {
     ],
     "/algorithm/": [
         {
+            title: "数据结构", // 必要的
+            children: [
+                "/algorithm/structure/array.md"
+            ],
+        },
+        {
             title: "算法思想", // 必要的
             children: [
                 "/algorithm/knows/1"
@@ -38,7 +44,27 @@ module.exports = {
         {
             title: "剑指offer", // 必要的
             children: [
-                "/algorithm/offer/1",
+                "/algorithm/leetcode/offer03",
+                "/algorithm/leetcode/offer04",
+                "/algorithm/leetcode/offer05",
+                "/algorithm/leetcode/offer06",
+                "/algorithm/leetcode/offer09",
+                "/algorithm/leetcode/offer11",
+                "/algorithm/leetcode/offer21",
+                "/algorithm/leetcode/offer24",
+                "/algorithm/leetcode/offer27",
+                "/algorithm/leetcode/offer29",
+                "/algorithm/leetcode/offer30",
+                "/algorithm/leetcode/offer35",
+                "/algorithm/leetcode/offer39",
+                "/algorithm/leetcode/offer45",
+                "/algorithm/leetcode/offer50",
+                "/algorithm/leetcode/offer53-1",
+                "/algorithm/leetcode/offer53-2",
+                "/algorithm/leetcode/offer57",
+                "/algorithm/leetcode/offer58-1",
+                "/algorithm/leetcode/offer58",
+                "/algorithm/leetcode/offer67",
             ],
         },
         {
