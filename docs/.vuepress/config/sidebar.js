@@ -38,7 +38,10 @@ module.exports = {
         {
             title: "算法思想", // 必要的
             children: [
-                "/algorithm/knows/1"
+                "/algorithm/knows/1",
+                "/algorithm/knows/2",
+                "/algorithm/knows/3",
+                "/algorithm/knows/4"
             ],
         },
         {

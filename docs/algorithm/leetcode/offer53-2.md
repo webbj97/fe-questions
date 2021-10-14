@@ -61,6 +61,20 @@ var missingNumber = function (nums) {
 };
 ```
 
+**暴力求解**
+
+递增数组，arr[i]!=i 一定是答案
+
+```js
+var missingNumber = function(nums) {
+    for(let i = 0;i < nums.length;i++){
+        if(nums[i] != i )
+            return i;
+    }
+    return nums.length;
+};
+```
+
 **二分法**
 
 1. 排序数组搜索数字首先想到二分法
