@@ -19,7 +19,7 @@ jobs:
         run: |
           yarn install
           yarn build
-      - run: "✅依赖安装并编译完成"
+      - run: echo "✅依赖安装并编译完成"
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
