@@ -32,13 +32,12 @@ module.exports = {
         {
             title: "数据结构", // 必要的
             children: [
-                "/algorithm/structure/array.md"
-            ],
-        },
-        {
-            title: "算法思想", // 必要的
-            children: [
-                "/algorithm/knows/1"
+                "/algorithm/knows/1.md", // 数组
+                "/algorithm/knows/2.md", // 栈
+                "/algorithm/knows/3.md", // 队列
+                "/algorithm/knows/4.md", // 链表
+                "/algorithm/knows/5.md", // 集合
+                "/algorithm/knows/6.md", // 树
             ],
         },
         {

@@ -7,9 +7,7 @@
     <img src="https://img.shields.io/badge/version-0.0.2-blue"/>
     <img src="https://img.shields.io/badge/node-14.0.0-brightgreen"/>
 </p>
-<p align=center>一份需要思考的前端闭关指南</p>
-
-## 项目食用指南
+<div align=center>一份需要思考的前端闭关指南，<a href="https://webbj97.github.io/fe-questions/" target="_blank">项目在线地址</a></div>
 
 ### 手撕代码汇总
 
@@ -24,6 +22,7 @@
   8. [flat](./docs/warehouse/js/1.md#flat)
   9. [includes](./docs/warehouse/js/1.md#includes)
   10. [empty(检验空数组)](./docs/warehouse/js/1.md#empty)
+  11. [unshift](./docs/warehouse/js/1.md#unshift)
 * 对象方法实现
   1. [deepclone(深浅拷贝)](./docs/warehouse/js/1.md#deepclone)
   2. [entries](./docs/warehouse/js/1.md#entries)
