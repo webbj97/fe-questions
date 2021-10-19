@@ -52,3 +52,12 @@ var searchMatrix = function (matrix, target) {
 };
 ```
 
+## 写在最后
+
+本篇是剑指Offer的第二题，俗话说好的合理的数据结构+算法才是写好代码的关键，不妨跟我一起来吧～
+
+**热门开源项目**
+
+* [前端进阶指南](https://github.com/webbj97/summary)
+* [高频经典手撕代码实现](https://github.com/webbj97/fe-questions)
+* [剑指Offer题解](https://github.com/webbj97/fe-questions/tree/master/docs/algorithm)
