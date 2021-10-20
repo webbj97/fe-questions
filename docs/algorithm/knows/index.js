@@ -8,6 +8,7 @@ class BinarySearchTree {
         this.postOrderTraverse = postOrderTraverse;
         this.min = min;
         this.max = max;
+        this.remove = remove;
     }
 }
 
@@ -103,48 +104,34 @@ function postOrderTraverseNode(node, callback) {
 }
 
 function min() {
-    if (!this.root) {
-        return null; // 空树
+    return minNode(this.root);
+}
+
+function minNode(node) {
+    let cur = node;
+    while (cur && cur.left) {
+        cur = cur.left;
     }
-    let node = this.root;
-    while (node && node.left) {
-        node = node.left;
-    }
-    return node.key;
+    return cur;
 }
 
 function max() {
-    if (!this.root) {
-        return false; // 空树
-    }
-    let node = this.root;
-    while (node && node.right) {
-        node = node.right;
-    }
-    return node.key;
+    return maxNode(this.root);
 }
 
-function remove() {
-
+function maxNode(node){
+    let cur = node;
+    while (cur && cur.right) {
+        cur = cur.right;
+    }
+    return cur;
 }
 
-const bst = new BinarySearchTree();
-bst.insert(10);
-bst.insert(11);
-bst.insert(2);
-bst.insert(1);
-bst.insert(0);
-console.log('search1:', bst.search(1));
-console.log('search2:', bst.search(100));
-bst.inOrderTraverse(a => console.log(a));
-console.log('------:', );
-bst.preOrderTraverse(a => console.log(a));
-console.log('------:', );
-bst.postOrderTraverse(a => console.log(a));
-console.log('min>>', bst.min());
-console.log('max>>', bst.max());
+function remove(key) {
+    this.root = removeNode(this.root, key, this)
+}
 
-function removeNode(node, key) {
+function removeNode(node, key, bst) {
     if (node == null) { // {2} 
         return null;
     }
@@ -169,9 +156,20 @@ function removeNode(node, key) {
         }
         // 存在左右子节点
         // 左节点，要接在右节点的最左侧
-        const min = this.min(node.right); // 找到最小的值
+        const min = minNode(node.right); // 找到最小的值
         node.key = min.key;
-        node.right = this.removeNode(node.right, min.key);
+        node.right = removeNode(node.right, min.key);
         return node;
     }
 }
+
+const bst = new BinarySearchTree();
+bst.insert(10);
+bst.insert(11);
+bst.insert(2);
+bst.insert(1);
+bst.insert(0);
+console.log('min>>', bst.min());
+console.log('max>>', bst.max());
+bst.remove(10);
+bst.inOrderTraverse(a => console.log(a));

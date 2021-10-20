@@ -1,4 +1,5 @@
 # 剑指Offer-06 从尾到头打印链表
+
 > **JavaScript剑指Offer题解**<br>
 > 🚀<font color=red>包含数组、对象、链表、堆栈、树等经典题型</font>
 > ☕️每天一道，轻松不累
@@ -9,7 +10,6 @@
 <a href="https://github.com/webbj97/fe-questions/tree/master/docs/algorithm" target="blank">在线阅读地址</a>
 
 ### 题目描述
-
 
 输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
 
