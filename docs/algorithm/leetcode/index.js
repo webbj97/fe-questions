@@ -6,37 +6,28 @@
  * }
  */
 /**
- * @param {ListNode} head
- * @param {number} k
+ * @param {ListNode} l1
+ * @param {ListNode} l2
  * @return {ListNode}
  */
-const head = {
-    val: 1,
-    next: {
-        val: 2,
-        next: {
-            val: 3,
-            next: null
-        }
-    }
-}
-var getKthFromEnd = function (head, k) {
-    // 快慢针针
-    let i = 0;
-    let cur = head;
-    while (cur) {
-        cur = cur.next;
-        i++;
-    }
-    const index = i - k; //正序
-    i = 0;
+var mergeTwoLists = function (l1, l2) {
+    let head = new ListNode(null)
     cur = head;
-    while (i !== index && cur) {
+    while (l1 || l2) {
+        if (!l1) {
+            cur.next = new ListNode(l2.val)
+            l2 = l2.next;
+        }else if (!l2) {
+            cur.next = new ListNode(l1.val)
+            l1 = l1.next;
+        } else if (l1.val < l2.val) {
+            cur.next = new ListNode(l1.val)
+            l1 = l1.next;
+        } else {
+            cur.next = new ListNode(l2.val)
+            l2 = l2.next;
+        }
         cur = cur.next;
-        i++;
     }
-    return cur
+    return head.next;
 };
-
-res = getKthFromEnd(head, 1)
-console.log('res:', res);
