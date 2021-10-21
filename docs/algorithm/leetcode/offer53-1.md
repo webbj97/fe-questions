@@ -37,3 +37,7 @@ var search = function(nums, target) {
 
 由第一种方法容易想到 找出左边界，右边界，一减就得出结果了。那么这个边界可以使用二分法来找。
 
+
+ 
+ <comment-comment/> 
+ 

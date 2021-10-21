@@ -16,14 +16,5 @@ module.exports = {
         lastUpdated: '上次更新于',
         nav: require('./config/nav'),
         sidebar: require('./config/sidebar'),
-        // ads: {
-        //     style: 2,
-        //     speed: 3000,
-        //     items: [{
-        //         text: '更多前端知识点',
-        //         image: 'https://hlgcdn.oss-cn-hangzhou.aliyuncs.com/hlg-ui/163046294481790/11.jpeg',
-        //         link: '',
-        //     }, ]
-        // },
     },
 };

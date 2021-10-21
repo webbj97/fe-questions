@@ -27,7 +27,6 @@
     </div>
 </template>
 
-
 <script>
 import { Button, PageHeader } from "ant-design-vue";
 const { presetPalettes } = require("./utils/index");
@@ -90,7 +89,6 @@ export default {
                 .sort();
 
             this.pages = pages;
-            console.log('tis:', this.pages);
         },
         onClick({ newUrl }) {
             window.open(newUrl);

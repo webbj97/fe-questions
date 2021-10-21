@@ -2,7 +2,8 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "node ./builds/addComponents.js && vuepress build docs && node ./builds/delComponents.js",
-    "test": "jest"
+    "test": "jest",
+    "slidev": "slidev"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.2",

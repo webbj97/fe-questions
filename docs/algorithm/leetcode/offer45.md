@@ -18,3 +18,6 @@ var minNumber = function (nums) {
 
 console.log('min:', minNumber([3, 30, 34, 5, 9]));
 ```
+ 
+ <comment-comment/> 
+ 
