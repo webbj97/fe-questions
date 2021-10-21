@@ -44,7 +44,7 @@
 ### 链表
 
 1. ✅[剑指Offer（06）从尾到头打印链表](./leetcode/offer06.md)
-2. 剑指Offer（十四）--链表中倒数第k个节点
+2. ✅[剑指Offer（22）链表中倒数第k个节点](./leetcode/offer22.md)
 3. ✅[剑指Offer（24）反转链表](./leetcode/offer24.md)
 4. 剑指Offer（十六）-- 合并两个排序的链表
 5. ❌[剑指Offer（35）复杂链表的复制](./leetcode/offer35.md)
@@ -98,7 +98,7 @@
 1. [剑指Offer（07）重建二叉树](./leetcode/offer07.md)
 2. 剑指Offer（十七）-- 树的子结构
 3. 剑指Offer（十八）-- 二叉树的镜像
-4. 剑指Offer（二十二）-- 从上往下打印二叉树
+4. [剑指Offer（32-1）从上往下打印二叉树I](./leetcode/offer32-1.md)
 5. 剑指Offer（二十三）-- 二叉树搜索树的后序遍历序列
 6. 剑指Offer（二十四）-- 二叉树中和为某一值的路径
 7. 剑指Offer（二十六）-- 二叉搜索树和双向链表

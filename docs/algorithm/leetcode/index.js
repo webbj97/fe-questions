@@ -1,24 +1,42 @@
-var buildTree = function (preorder, inorder) {
-
-};
-
-
-
-
 /**
- * @param {number[]} preorder
- * @param {number[]} inorder
- * @return {TreeNode}
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
  */
-var buildTree = function (preorder, inorder) {
-    if (!preorder.length || !inorder.length) return null
-    let root = preorder[0]; // 前序遍历的第一个元素为根节点
-    let node = new TreeNode(root); // 确定根节点
-
-    let i = inorder.indexOf(root); // 获取根节点在中序遍历中的位置(用于分割左右子树)
-
-    // 递归
-    node.left = buildTree(preorder.slice(1, i + 1), inorder.slice(0, i));
-    node.right = buildTree(preorder.slice(i + 1), inorder.slice(i + 1));
-    return node
+/**
+ * @param {ListNode} head
+ * @param {number} k
+ * @return {ListNode}
+ */
+const head = {
+    val: 1,
+    next: {
+        val: 2,
+        next: {
+            val: 3,
+            next: null
+        }
+    }
+}
+var getKthFromEnd = function (head, k) {
+    // 快慢针针
+    let i = 0;
+    let cur = head;
+    while (cur) {
+        cur = cur.next;
+        i++;
+    }
+    const index = i - k; //正序
+    i = 0;
+    cur = head;
+    while (i !== index && cur) {
+        cur = cur.next;
+        i++;
+    }
+    return cur
 };
+
+res = getKthFromEnd(head, 1)
+console.log('res:', res);
