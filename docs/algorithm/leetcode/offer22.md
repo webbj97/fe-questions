@@ -23,7 +23,6 @@
 
 ```js
 var getKthFromEnd = function (head, k) {
-    // 快慢针针
     let i = 0;
     let cur = head;
     while (cur) {
