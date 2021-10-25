@@ -1,33 +1,22 @@
 /**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
+ * @param {number[]} numbers
+ * @return {number}
  */
-/**
- * @param {ListNode} l1
- * @param {ListNode} l2
- * @return {ListNode}
- */
-var mergeTwoLists = function (l1, l2) {
-    let head = new ListNode(null)
-    cur = head;
-    while (l1 || l2) {
-        if (!l1) {
-            cur.next = new ListNode(l2.val)
-            l2 = l2.next;
-        }else if (!l2) {
-            cur.next = new ListNode(l1.val)
-            l1 = l1.next;
-        } else if (l1.val < l2.val) {
-            cur.next = new ListNode(l1.val)
-            l1 = l1.next;
-        } else {
-            cur.next = new ListNode(l2.val)
-            l2 = l2.next;
+var minArray = function (numbers) {
+    let left = 0;
+    let right = numbers.length - 1;
+    while (left < right) {
+        let mid = parseInt((left + right) / 2); //注意js里面需要转化为整数！
+        if (numbers[mid] < numbers[right]) {
+            // 如果mid < right，证明是单调递增的，拐点在左侧，注意，拐点可能在mid，所以不能mid+1
+            right = mid;
+        } else if (numbers[mid] > numbers[right]) {
+            // 如果mid > right，单调性被破坏，证明拐点在右侧
+            left = mid + 1;
+        } else { 
+            // 如果相等，分辨不出来，删除一位不会影响最终结果
+            right--;
         }
-        cur = cur.next;
     }
-    return head.next;
+    return numbers[left]
 };
