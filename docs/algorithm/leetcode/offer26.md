@@ -38,6 +38,31 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 
 ## 题解：
 
-```js
+判断B是否为A的子结构：
+判断A和B是否一致（结构相同），如果是，那么B是A的子结构。
+如果不是，判断B是否是A的左孩子或者右孩子的子结构，如果是，那么B是A的子结构，如果不是，那么B不是A的子结构（递归）
 
+判断A和B是否一致：
+判断当前B是null？ 那么B一直到叶节点了都匹配上了，返回true
+判断当前A是null? 那么A是nullB不是null，此时肯定不匹配 返回false
+判断当前A的值和B的值，如果不相等，肯定不匹配，返回false
+如果前面通过，则下一步判断A的孩子和B的孩子是否一致。（递归）
+
+```js
+/**
+ * @param {TreeNode} A
+ * @param {TreeNode} B
+ * @return {boolean}
+ */
+var isSubStructure = function(A, B) {
+    if(!A || !B)return false
+    return isSameTree(A,B) || isSubStructure(A.left,B) || isSubStructure(A.right,B);
+};
+
+var isSameTree = function(A,B){
+    if(B==null) return true;
+    if(A==null) return false;
+    if(A.val!=B.val) return false;
+    return isSameTree(A.left,B.left) && isSameTree(A.right,B.right)
+}
 ```
