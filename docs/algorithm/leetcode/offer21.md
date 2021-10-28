@@ -76,6 +76,27 @@ var exchange = function (nums) {
     }
     return nums;
 };
+
+//zy
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var exchange = function(nums) {
+    let p = 0; let q = nums.length -1;
+    while(p<=q){
+        if(nums[p]%2 ==0 && nums[q]% 2 ==1){
+            [nums[p],nums[q]] = [nums[q],nums[p]];
+        }
+        if(nums[p] % 2 == 1 ){
+            p++;
+        }
+        if(nums[q] %2 == 0){
+            q--;
+        }
+    }
+    return nums;
+};
 ```
 
 **热门开源项目**
