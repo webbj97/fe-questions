@@ -44,13 +44,14 @@
 ### 链表
 
 1. ✅[剑指Offer（06）从尾到头打印链表](./leetcode/offer06.md)
-2. ✅[剑指Offer（22）链表中倒数第k个节点](./leetcode/offer22.md)
-3. ✅[剑指Offer（24）反转链表](./leetcode/offer24.md)
-4. ✅[剑指Offer（25）合并两个拍排序的链表](./leetcode/offer25.md)
-5. ❌[剑指Offer（35）复杂链表的复制](./leetcode/offer35.md)
-6. 剑指Offer（三十六）-- 两个链表的第一个公共节点
-7. 剑指Offer（五十五）-- 链表中环的入口节点
-8. 剑指Offer（五十六）-- 删除链表中重复的元素
+2. ✅[剑指Offer（18）删除链表的节点](./leetcode/offer18.md)
+3. ✅[剑指Offer（22）链表中倒数第k个节点](./leetcode/offer22.md)
+4. ✅[剑指Offer（24）反转链表](./leetcode/offer24.md)
+5. ✅[剑指Offer（25）合并两个拍排序的链表](./leetcode/offer25.md)
+6. ❌[剑指Offer（35）复杂链表的复制](./leetcode/offer35.md)
+7. 剑指Offer（三十六）-- 两个链表的第一个公共节点
+8. 剑指Offer（五十五）-- 链表中环的入口节点
+9. 剑指Offer（五十六）-- 删除链表中重复的元素
 
 ### 栈和队列
 
@@ -68,7 +69,6 @@
 9. ✅[剑指Offer（57）和为s的两个数字](./leetcode/offer57.md)
 
 ### 搜索算法
-
 
 
 ### 动态规划
@@ -98,21 +98,22 @@
 
 1. ✅[剑指Offer（07）重建二叉树](./leetcode/offer07.md)
 2. 剑指Offer（十七）-- 树的子结构
-3. 剑指Offer（十八）-- 二叉树的镜像
-4. ✅[剑指Offer（32-1）从上往下打印二叉树I](./leetcode/offer32-1.md)
-5. ✅[剑指Offer（32-2）从上往下打印二叉树II](./leetcode/offer32-2.md)
-6. ✅[剑指Offer（32-3）从上往下打印二叉树II](./leetcode/offer32-3.md)
-7. 剑指Offer（二十三）-- 二叉树搜索树的后序遍历序列
-8. 剑指Offer（二十四）-- 二叉树中和为某一值的路径
-9. 剑指Offer（二十六）-- 二叉搜索树和双向链表
-10. 剑指Offer（三十八）-- 树的深度
-11. 剑指Offer（三十九）-- 平衡二叉树
-12. 剑指Offer（五十七）-- 二叉树的下一个节点
-13. 剑指Offer（五十八）-- 对称二叉树
-14. 剑指Offer（五十九）-- 按之字形顺序打印二叉树
-15. 剑指Offer（六十）-- 将二叉树打印成多行
-16. 剑指Offer（六十一）-- 序列化二叉树
-17. 剑指Offer（六十二）-- 二叉搜索树的第k个节点
+3. ✅[剑指Offer（27）二叉树的镜像](./leetcode/offer27.md)
+4. ✅[剑指Offer（28）对称的二叉树](./leetcode/offer28.md)
+5. ✅[剑指Offer（32-1）从上往下打印二叉树I](./leetcode/offer32-1.md)
+6. ✅[剑指Offer（32-2）从上往下打印二叉树II](./leetcode/offer32-2.md)
+7. ✅[剑指Offer（32-3）从上往下打印二叉树II](./leetcode/offer32-3.md)
+8. 剑指Offer（二十三）-- 二叉树搜索树的后序遍历序列
+9. 剑指Offer（二十四）-- 二叉树中和为某一值的路径
+10. 剑指Offer（二十六）-- 二叉搜索树和双向链表
+11. 剑指Offer（三十八）-- 树的深度
+12. 剑指Offer（三十九）-- 平衡二叉树
+13. 剑指Offer（五十七）-- 二叉树的下一个节点
+14. 剑指Offer（五十八）-- 对称二叉树
+15. 剑指Offer（五十九）-- 按之字形顺序打印二叉树
+16. 剑指Offer（六十）-- 将二叉树打印成多行
+17. 剑指Offer（六十一）-- 序列化二叉树
+18. 剑指Offer（六十二）-- 二叉搜索树的第k个节点
 
 ### 其他算法
 
