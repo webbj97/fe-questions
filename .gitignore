@@ -5,3 +5,7 @@ test
 .history
 .DS_Store
 slidev
+.idea/fe-questions.iml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
