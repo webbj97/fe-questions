@@ -97,7 +97,7 @@
 ### 二叉树
 
 1. ✅[剑指Offer（07）重建二叉树](./leetcode/offer07.md)
-2. 剑指Offer（十七）-- 树的子结构
+2. ✅[剑指Offer（26）树的子结构](./leetcode/offer26.md)
 3. ✅[剑指Offer（27）二叉树的镜像](./leetcode/offer27.md)
 4. ✅[剑指Offer（28）对称的二叉树](./leetcode/offer28.md)
 5. ✅[剑指Offer（32-1）从上往下打印二叉树I](./leetcode/offer32-1.md)
