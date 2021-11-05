@@ -52,3 +52,25 @@ var getIntersectionNode = function(headA, headB) {
 ```
 
 ## 题解二（暴力统计）
+
+1. 利用哈希统计链表A的每一个节点
+2. 遍历链表B查找公共节点
+
+```js
+var getIntersectionNode = function (headA, headB) {
+    const visited = new Set();
+    let temp = headA;
+    while (temp !== null) {
+        visited.add(temp);
+        temp = temp.next;
+    }
+    temp = headB;
+    while (temp !== null) {
+        if (visited.has(temp)) {
+            return temp;
+        }
+        temp = temp.next;
+    }
+    return null;
+};
+```

@@ -49,7 +49,7 @@
 4. ✅[剑指Offer（24）反转链表](./leetcode/offer24.md)
 5. ✅[剑指Offer（25）合并两个拍排序的链表](./leetcode/offer25.md)
 6. ❌[剑指Offer（35）复杂链表的复制](./leetcode/offer35.md)
-7. 剑指Offer（三十六）-- 两个链表的第一个公共节点
+7. [剑指Offer（52）两个链表的第一个公共节点](./leetcode/offer52.md)
 8. 剑指Offer（五十五）-- 链表中环的入口节点
 9. 剑指Offer（五十六）-- 删除链表中重复的元素
 
@@ -122,7 +122,7 @@
 3. 剑指Offer（三十三）-- 丑数
 4. 剑指Offer（四十一）-- 和为S的连续正数序列
 5. 剑指Offer（四十二）-- 和为S的两个数字
-6. ✅ [剑指 Offer 61. 扑克牌中的顺子](./leetcode/offer61.md)
+6. ✅ [剑指Offer（61）扑克牌中的顺子](./leetcode/offer61.md)
 7. 剑指Offer（四十六）-- 最后出圈的士兵（约瑟夫）
 8. 剑指Offer（四十七）-- 1+2+...+n的求和（不使用循环或者乘法）
 9. 剑指Offer（六十七）-- 剪绳子
