@@ -9,6 +9,20 @@ module.exports = {
             ],
         },
         {
+            title: "数组方法", // 必要的
+            children: [
+                "/warehouse/js/array/concat",
+                "/warehouse/js/array/every",
+                "/warehouse/js/array/filter",
+                "/warehouse/js/array/find",
+                "/warehouse/js/array/flattenDepth",
+                "/warehouse/js/array/pop",
+                "/warehouse/js/array/push",
+                "/warehouse/js/array/remove",
+                "/warehouse/js/array/some",
+            ],
+        },
+        {
             title: "TypeScript", // 必要的
             sidebarDepth: 3,
             children: [
