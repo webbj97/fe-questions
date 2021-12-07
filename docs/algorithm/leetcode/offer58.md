@@ -28,6 +28,3 @@ var reverseLeftWords = function (s, n) {
     return right + left;
 };
 ```
- 
- <comment-comment/> 
- 

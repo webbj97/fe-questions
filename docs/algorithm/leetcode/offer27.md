@@ -33,6 +33,3 @@ var mirrorTree = function(root) {
     return root;
 };
 ```
- 
- <comment-comment/> 
- 

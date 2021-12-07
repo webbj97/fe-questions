@@ -34,6 +34,3 @@ var copyRandomList = function(head) {
     
 };
 ```
- 
- <comment-comment/> 
- 

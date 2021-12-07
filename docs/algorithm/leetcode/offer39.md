@@ -81,6 +81,3 @@ var majorityElement = function (nums) {
     return cur;
 };
 ```
- 
- <comment-comment/> 
- 

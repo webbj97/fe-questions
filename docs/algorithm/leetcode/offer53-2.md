@@ -102,6 +102,3 @@ var missingNumber = function (nums) {
     return left;
 };
 ```
- 
- <comment-comment/> 
- 

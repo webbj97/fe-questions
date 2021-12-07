@@ -123,6 +123,3 @@ var strToInt = function (s) {
     return 0;
 };
 ```
- 
- <comment-comment/> 
- 

@@ -64,6 +64,3 @@ CQueue.prototype.deleteHead = function() {
  * var param_2 = obj.deleteHead()
  */
 ```
- 
- <comment-comment/> 
- 
