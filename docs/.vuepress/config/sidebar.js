@@ -1,25 +1,51 @@
 module.exports = {
-    "/warehouse/": [{
-            title: "JS高频手撕代码", // 必要的
-            children: [
-                "/warehouse/js/1",
-                "/warehouse/js/2",
-                "/warehouse/js/3",
-                "/warehouse/js/4",
-            ],
-        },
+    "/warehouse/": [
         {
-            title: "数组方法", // 必要的
+            title: "数组", // 必要的
             children: [
+                "/warehouse/js/array/chunk",
                 "/warehouse/js/array/concat",
-                "/warehouse/js/array/every",
-                "/warehouse/js/array/filter",
-                "/warehouse/js/array/find",
                 "/warehouse/js/array/flattenDepth",
                 "/warehouse/js/array/pop",
                 "/warehouse/js/array/push",
                 "/warehouse/js/array/remove",
-                "/warehouse/js/array/some",
+                "/warehouse/js/array/reverse",
+            ],
+        },
+        {
+            title: "集合（遍历）", // 必要的
+            children: [
+                "/warehouse/js/collection/every",
+                "/warehouse/js/collection/filter",
+                "/warehouse/js/collection/find",
+                "/warehouse/js/collection/includes",
+                "/warehouse/js/collection/some",
+            ],
+        },
+        {
+            title: "对象", // 必要的
+            children: [
+                "/warehouse/js/object/clonedeep",
+            ],
+        },
+        {
+            title: "函数", // 必要的
+            children: [
+                "/warehouse/js/function/bind",
+                "/warehouse/js/function/call",
+            ],
+        },
+        {
+            title: "字符串", // 必要的
+            children: [
+                "/warehouse/js/string/split",
+            ],
+        },
+        {
+            title: "JS高频手撕代码", // 必要的
+            children: [
+                "/warehouse/js/3",
+                "/warehouse/js/4",
             ],
         },
         {
