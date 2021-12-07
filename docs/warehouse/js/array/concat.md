@@ -1,13 +1,13 @@
 # concat
 
-> <b> _concat(array, [values]) </b>
+> <b> _concat(array, values) </b>
 
 创建一个新数组，将array与任何**数组** 或 **值连**接在一起。
 
 ### 参数：
 
 * array (Array): 被连接的数组。
-* [values]: 连接的值。
+* values: 连接的值。
 
 ### 返回值
 

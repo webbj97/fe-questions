@@ -68,6 +68,14 @@ module.exports = {
             children: ["/warehouse/network/1"],
         },
     ],
+    "/css/": [
+        {
+            title: "数据结构", // 必要的
+            children: [
+                "/css/basic/1", // 数组
+            ],
+        },
+    ],
     "/algorithm/": [
         {
             title: "数据结构", // 必要的
