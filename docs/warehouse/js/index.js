@@ -1,20 +1,15 @@
-const _chunk = function (array, size = 1) {
-    const length = array == null ? 0 : array.length;
-    if (!length || size < 1) return [];
-
-    const len = Math.ceil(length / size);
-    const result = new Array(len);
-    let index = -1;
-    while (++index < len) {
-        const start = size * index;
-        result[index] = array.slice(start, size + start)
+const _reverse = (array) => {
+    for (let i = 0; i < Math.floor(array.length / 2); i++) {
+        const left = i;
+        const right = array.length - 1 - i;
+        [array[left], array[right]] = [array[right], array[left]];
     }
-    return result;
-}
+    return array;
+};
 
-const arr = ['a', 'b', 'c', 'd']
-console.log(_chunk(arr, 2))
-// => [['a', 'b'], ['c', 'd']]
 
-console.log(_chunk(arr, 3))
-// => [['a', 'b', 'c'], ['d']]
+const array = [1, 2, 3];
+
+_reverse(array);
+
+console.log(array);

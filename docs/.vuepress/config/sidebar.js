@@ -39,13 +39,13 @@ module.exports = {
             title: "字符串", // 必要的
             children: [
                 "/warehouse/js/string/split",
+                "/warehouse/js/string/reverse",
             ],
         },
         {
             title: "JS高频手撕代码", // 必要的
             children: [
                 "/warehouse/js/3",
-                "/warehouse/js/4",
             ],
         },
         {
@@ -56,11 +56,9 @@ module.exports = {
             ],
         },
         {
-            title: "Css", // 必要的
-            sidebarDepth: 3,
+            title: "实用技巧", // 必要的
             children: [
-                "/warehouse/css/1",
-                "/warehouse/css/2"
+                "/warehouse/js/string/split",
             ],
         },
         {
@@ -70,9 +68,21 @@ module.exports = {
     ],
     "/css/": [
         {
-            title: "数据结构", // 必要的
+            title: "经典布局场景", // 必要的
             children: [
-                "/css/basic/1", // 数组
+                "/css/layout/1", // 数组
+            ],
+        },
+        {
+            title: "动画", // 必要的
+            children: [
+                "/css/animation/1", // 数组
+            ],
+        },
+        {
+            title: "过渡", // 必要的
+            children: [
+                "/css/transition/1", // 数组
             ],
         },
     ],

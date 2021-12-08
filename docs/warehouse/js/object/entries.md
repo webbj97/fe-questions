@@ -15,7 +15,15 @@
 ### 实现
 
 ```js
-
+const _entries = (obj) => {
+    const keys = Object.keys(obj);
+    const resArray = [];
+    for (let i = 0; i < keys.length; i++) {
+        const cur = keys[i];
+        resArray.push([cur, obj[cur]]);
+    }
+    return resArray;
+};
 ```
 
 ### 例子
@@ -28,6 +36,6 @@ function Foo() {
  
 Foo.prototype.c = 3;
  
-_.toPairs(new Foo);
-// => [['a', 1], ['b', 2]] (iteration order is not guaranteed)
+_entries(new Foo);
+// => [['a', 1], ['b', 2]]
 ```

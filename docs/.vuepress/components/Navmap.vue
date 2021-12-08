@@ -1,26 +1,17 @@
 <!-- 组件说明 -->
 <template>
     <div class="readme">
-        <div class="readme__items" v-for="item in pages" :key="item.key">
-            <template v-if="!item.heads || item.heads.length === 0">
-                <a
-                    :href="item.path"
-                >
-                    {{ item.title }}
-                </a>
-            </template>
-            <template v-else>
-                <h4 class="title">{{ item.title }}</h4>
-            </template>
-            <div class="contents" v-if="item.heads && item.heads.length">
+        <div class="readme__items" v-for="item in list" :key="item.key">
+            <h3 class="title">{{ item.title }}</h3>
+            <div class="contents" v-if="item.child">
                 <Button
-                    v-for="(item, i) in item.heads"
-                    :key="i"
-                    :style="{ background: item.bgColor }"
-                    @click="onClick(item)"
+                    v-for="v in item.child"
+                    :key="v.key"
+                    :style="{ background: v.bgColor }"
+                    @click="onClick(v)"
                     class="btn"
                 >
-                    {{ item.title }}
+                    {{ v.title }}
                 </Button>
             </div>
         </div>
@@ -30,6 +21,7 @@
 <script>
 import { Button, PageHeader } from "ant-design-vue";
 const { presetPalettes } = require("./utils/index");
+const sidebar = require("../config/sidebar");
 
 export default {
     name: "Navmap",
@@ -37,12 +29,6 @@ export default {
         return {
             pages: [],
         };
-    },
-    props: {
-        text:{
-            type: String,
-            default: ''
-        }
     },
     components: {
         Button,
@@ -57,41 +43,38 @@ export default {
             const { $page: page } = this;
             return page;
         },
-    },
-    mounted() {
-        this.initSite();
-    },
-    methods: {
-        // 分模块加载导航
-        initSite() {
-            const { scope, page, text } = this;
-            const { regularPath } = page; // 当前主模块
-            const Reg = text || regularPath; // 指定分类
-            const pages = scope.pages
-                .filter(
-                    (v) =>
-                        v.title &&
-                        v.regularPath.indexOf(Reg) !== -1 &&
-                        v.regularPath !== Reg
-                )
-                .map((item) => {
-                    item.heads = [...(item.headers || [])]
-                        .filter((v) => v.level === 2 && v.title)
-                        .map((v) => {
-                            const i = Math.floor(Math.random() * 10);
-                            v.bgColor = presetPalettes[i];
-                            v.newUrl =
-                                "/fe-questions" + item.path + "#" + v.slug;
-                            return v;
-                        });
-                    return item;
-                })
-                .sort();
+        list() {
+            const { pages = [] } = this.scope;
+            const { regularPath } = this.page; // 当前主模块
+            const curList = pages.filter(
+                (v) => v.regularPath.indexOf(regularPath) !== -1
+            );
+            const curNav = sidebar[regularPath] || [];
 
-            this.pages = pages;
+            const result = curNav.map((group) => {
+                const { children } = group;
+                const child = children.map((route, index) => {
+                    const data = curList.find(
+                        (v) => v.path === route + ".html"
+                    );
+                    return {
+                        url: route,
+                        bgColor: presetPalettes[index],
+                        ...data,
+                    };
+                });
+                return {
+                    ...group,
+                    child,
+                };
+            });
+            return result;
         },
-        onClick({ newUrl }) {
-            window.open(newUrl);
+    },
+    mounted() {},
+    methods: {
+        onClick({ path }) {
+            location.href = path;
         },
     },
 };
@@ -114,11 +97,13 @@ export default {
 
             .btn {
                 margin-right: 20px;
-                margin-bottom: 20px;
+                margin-bottom: 15px;
                 border: none;
                 color: #000;
-                &:hover{
-
+                transition: all 0.3;
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: 2px 2px 2px #ccc;
                 }
             }
         }

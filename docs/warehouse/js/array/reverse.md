@@ -1,44 +1,39 @@
 # reverse
 
-> <b> _chunk(array, [size=1])</b>
+> <b> _reverse(array)</b>
 
-将数组（array）拆分成多个 size 长度的区块，并将这些区块组成一个新数组。 如果array 无法被分割成全部等长的区块，那么最后剩余的元素将组成一个区块。
+反转array，使得第一个元素变为最后一个元素，第二个元素变为倒数第二个元素，依次类推。
 
+**注意：**这个方法会改变原数组 array，基于Array#reverse.
 ### 参数
 
-* array (Array): 需要处理的数组
-* [size=1] (number): 每个数组区块的长度
+* array (Array): 要修改的数组。
 
 ### 返回
 
-* (Array): 返回一个包含拆分区块的新数组（注：相当于一个二维数组）。
+* (Array): 返回 array.
 
 ### 实现
 
 ```js
-const _chunk = function (array, size = 1) {
-    const length = array == null ? 0 : array.length;
-    if (!length || size < 1) return [];
-
-    const len = Math.ceil(length / size);
-    const result = new Array(len);
-    let index = -1;
-
-    while (++index < len) {
-        const start = size * index;
-        result[index] = array.slice(start, size + start)
+const _reverse = (array) => {
+    for (let i = 0; i < Math.floor(array.length / 2); i++) {
+        const left = i;
+        const right = array.length - 1 - i;
+        [array[left], array[right]] = [array[right], array[left]];
     }
-    return result;
-}
+    return array;
+};
+
 ```
 
 ### 例子
 
 ```js
-const arr = ['a', 'b', 'c', 'd']
-_chunk(arr, 2);
-// => [['a', 'b'], ['c', 'd']]
+const array = [1, 2, 3];
  
-_chunk(arr, 3);
-// => [['a', 'b', 'c'], ['d']]
+_reverse(array);
+ 
+console.log(array);
+// => [3, 2, 1]
 ```
