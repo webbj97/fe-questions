@@ -17,9 +17,8 @@ jobs:
       - run: echo "🖥️ 工作流准备：The workflow is now ready to test your code on the runner."
       - name: Build and Deploy
         run: | 
-          npm i cnpm -g
-          cnpm i
-          npm run build
+          yarn install
+          yarn build
       - run: echo "✅依赖安装并编译完成"
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
