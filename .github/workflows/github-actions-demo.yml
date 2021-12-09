@@ -17,7 +17,6 @@ jobs:
       - run: echo "🖥️ 工作流准备：The workflow is now ready to test your code on the runner."
       - name: Build and Deploy
         run: | 
-          npm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/
           yarn install
           yarn build
       - run: echo "✅依赖安装并编译完成"

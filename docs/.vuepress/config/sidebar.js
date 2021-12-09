@@ -31,8 +31,15 @@ module.exports = {
         {
             title: "函数", // 必要的
             children: [
+                "/warehouse/js/function/apply",
                 "/warehouse/js/function/bind",
                 "/warehouse/js/function/call",
+                "/warehouse/js/function/compose",
+                "/warehouse/js/function/curry",
+                "/warehouse/js/function/debounce",
+                "/warehouse/js/function/pipe",
+                "/warehouse/js/function/sleep",
+                "/warehouse/js/function/throttle",
             ],
         },
         {
@@ -40,12 +47,6 @@ module.exports = {
             children: [
                 "/warehouse/js/string/split",
                 "/warehouse/js/string/reverse",
-            ],
-        },
-        {
-            title: "JS高频手撕代码", // 必要的
-            children: [
-                "/warehouse/js/3",
             ],
         },
         {

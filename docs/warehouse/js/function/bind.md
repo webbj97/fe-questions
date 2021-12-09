@@ -1,6 +1,6 @@
 # bind
 
-> <b> _bind(func, thisArg, [partials])#</b>
+> <b> _bind(context, arg)#</b>
 
 创建一个调用func的函数，thisArg绑定func函数中的 this (注：this的上下文为thisArg) ，并且func函数会接收partials附加参数。
 

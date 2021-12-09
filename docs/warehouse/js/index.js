@@ -1,15 +1,15 @@
-const _reverse = (array) => {
-    for (let i = 0; i < Math.floor(array.length / 2); i++) {
-        const left = i;
-        const right = array.length - 1 - i;
-        [array[left], array[right]] = [array[right], array[left]];
-    }
-    return array;
-};
+function compose(...arg) {
+    // 保存参数列表
+    return function (x) {
+        return arg.reduceRight((p, f) => f(p), x);
+    };
+}
 
+const a = x => x + 'a';
+const b = x => x + 'b';
+const c = x => x + 'c';
+const d = x => x + 'd';
 
-const array = [1, 2, 3];
-
-_reverse(array);
-
-console.log(array);
+const res = compose(a, b, c, d);
+console.log(res('0'));
+// => 0dcba
