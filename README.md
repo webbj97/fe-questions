@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/badge/version-0.0.2-blue"/>
     <img src="https://img.shields.io/badge/node-14.0.0-brightgreen"/>
 </p>
-<div align=center>一份需要思考的前端闭关指南，<a href="https://webbj97.github.io/fe-questions/" target="_blank">项目在线地址</a></div>
+<div align=center>一份需要思考的前端闭关指南，<a href="https://webbj97.github.io/fe-questions/" target="_blank">最新项目在线地址</a></div>
 
 ### 手撕代码汇总
 

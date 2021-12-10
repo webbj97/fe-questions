@@ -7,12 +7,14 @@ module.exports = {
     ],
     theme: 'antdocs',
     plugins: [
-        "@vuepress/back-to-top",
-        "vuepress-plugin-code-copy",
+        ["@vuepress/back-to-top"],
+        ["vuepress-plugin-code-copy"],
+        ["vuepress-plugin-reading-progress"],
         'demo-container',
     ],
     themeConfig: {
         repo: "https://github.com/webbj97/fe-questions",
+        smoothScroll: true, //平滑滚动
         lastUpdated: '上次更新于',
         nav: require('./config/nav'),
         sidebar: require('./config/sidebar'),

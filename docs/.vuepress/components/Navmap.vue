@@ -74,7 +74,7 @@ export default {
     mounted() {},
     methods: {
         onClick({ path }) {
-            location.href = path;
+            location.href = `/fe-questions${path}`;
         },
     },
 };
