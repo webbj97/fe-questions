@@ -25,7 +25,10 @@ module.exports = {
         {
             title: "对象", // 必要的
             children: [
+                "/warehouse/js/object/assign",
                 "/warehouse/js/object/clonedeep",
+                "/warehouse/js/object/entries",
+                
             ],
         },
         {
@@ -45,6 +48,8 @@ module.exports = {
         {
             title: "字符串", // 必要的
             children: [
+                "/warehouse/js/string/padStart",
+                "/warehouse/js/string/repeat",
                 "/warehouse/js/string/split",
                 "/warehouse/js/string/reverse",
             ],
