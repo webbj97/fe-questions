@@ -20,30 +20,40 @@
 
 ```js
 const _remove = function (array, callback) {
-    const result = []
-  if (!(array != null && array.length)) {
-    return result
-  }
-    values.forEach(val => {
-        if (Array.isArray(val)) {
-            result.push(...val);
-        } else {
-            result.push(val);
-        }
-    })
+    const result = [];
+    if (!(array && array.length)) {
+      return result;
+    }
+    const index = -1,
+        indexes = [],
+        length = array.length;
+        
+    while (++index < length) {
+      var value = array[index];
+      //在循环中如果符合函数条件，则在result数组中增加该值，并在indexes中记录索引
+      if (callback(value, index, array)) {
+        result.push(value);
+        indexes.push(index);
+      }
+    }
+    // 去除指定位置的元素
+    basePullAt(array, indexes);
     return result;
-}
+  }
+  
+
 ```
 
 ### 例子
 
 ```js
-var array = [1];
-var other = _concat(array, 2, [3], [[4]]);
- 
-console.log(other);
-// => [1, 2, 3, [4]]
- 
+const array = [1,2,3,4];
+
+const evens = _remove(array,n=>n%2==0);
+
+console.log(evens);
+// => [2,4]
+
 console.log(array);
-// => [1]
+// => [1,3]
 ```
