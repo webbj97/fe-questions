@@ -1,15 +1,30 @@
-function compose(...arg) {
-    // 保存参数列表
-    return function (x) {
-        return arg.reduceRight((p, f) => f(p), x);
-    };
-}
+const _remove = function(array, callback) {
+    const result = [];
+    if (!(array != null && array.length)) {
+        return result;
+    }
+    const { length } = array;
+    let i = -1;
+    const ids = [];
+    while (++i < length) {
+        const value = array[i];
+        if (callback(value, i, array)) {
+            result.push(value);
+        }
+    }
 
-const a = x => x + 'a';
-const b = x => x + 'b';
-const c = x => x + 'c';
-const d = x => x + 'd';
+    for (let i = 0; i < result.length; i++) {
+        const index = array.indexOf(result[i]);
+        array.splice(index, 1);
+    }
+    return result;
+};
 
-const res = compose(a, b, c, d);
-console.log(res('0'));
-// => 0dcba
+var array = [1, 2, 3, 4];
+var evens = _remove(array, (n, i) => !(n % 2));
+
+console.log(array);
+// => [1, 3]
+
+console.log(evens);
+// => [2, 4]

@@ -1,13 +1,12 @@
-<h1 align=center>高频实现原理</h1>
+<h1 >高频实现原理</h1>
 
-<p align="center">
+<p >
     <img src="https://img.shields.io/badge/JavaScript-important"/>
     <img src="https://img.shields.io/badge/TypeScript-brightgreen"/>
     <img src="https://img.shields.io/badge/Vue-blue"/>
     <img src="https://img.shields.io/badge/version-0.0.2-blue"/>
     <img src="https://img.shields.io/badge/node-14.0.0-brightgreen"/>
 </p>
-<p align=center>这里记录着或常见、或经典的方法实现</p>
 
 <Navmap />
 

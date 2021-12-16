@@ -19,6 +19,7 @@
 ### 实现
 
 ```js
+<<<<<<< HEAD
 const _remove = function (array, callback) {
     const result = [];
     if (!(array && array.length)) {
@@ -42,11 +43,35 @@ const _remove = function (array, callback) {
   }
   
 
+=======
+const _remove = function(array, callback) {
+    const result = [];
+    if (!(array != null && array.length)) {
+        return result;
+    }
+    const { length } = array;
+    let i = -1;
+    const ids = [];
+    while (++i < length) {
+        const value = array[i];
+        if (callback(value, i, array)) {
+            result.push(value);
+        }
+    }
+
+    for (let i = 0; i < result.length; i++) {
+        const index = array.indexOf(result[i]);
+        array.splice(index, 1);
+    }
+    return result;
+};
+>>>>>>> 2b5e840 (添加remove)
 ```
 
 ### 例子
 
 ```js
+<<<<<<< HEAD
 const array = [1,2,3,4];
 
 const evens = _remove(array,n=>n%2==0);
@@ -56,4 +81,14 @@ console.log(evens);
 
 console.log(array);
 // => [1,3]
+=======
+var array = [1, 2, 3, 4];
+var evens = _remove(array, (n, i) => !(n % 2));
+
+console.log(array);
+// => [1, 3]
+
+console.log(evens);
+// => [2, 4]
+>>>>>>> 2b5e840 (添加remove)
 ```

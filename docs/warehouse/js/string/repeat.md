@@ -1,4 +1,4 @@
-# padStart
+# repeat
 
 > <b>_repeat([string=''], [n=1])</b>
 
@@ -16,29 +16,35 @@
 ### 实现
 
 ```js
-const _padStart = function(str = "", length = 0, chars = " ") {
-    if (!length) return str;
-    const { length: strLen } = str;
-    const dif = length - strLen;
-    if (dif <= 0) return str;
-
-    let start = "";
-    for (let i = 0; i < dif; i++) {
-        start = start + chars;
+const _repeat = (string = "", n = 1) => {
+    // 重复0次，则返回空值
+    if (n === 0 || !string) return "";
+    let result = "";
+    while (n) {
+        if (n % 2) {
+            // 如果取余仍有值，证明是奇数位，需要先加一次
+            result += string; // 1倍
+        }
+        // 降幂
+        n = Math.floor(n / 2);
+        // 每降一次，则str * 2
+        if (n) {
+            string += string; // 2倍
+        }
     }
-    return start.slice(0, dif) + str;
+    return result;
 };
 ```
 
 ### 例子
 
 ```js
-_padStart("abc", 6);
-// => '   abc'
+_repeat("*", 3);
+// => '***'
 
-_padStart("abc", 6, "_-");
-// => '_-_abc'
+_repeat("abc", 2);
+// => 'abcabc'
 
-_padStart("abc", 3);
-// => 'abc'
+_repeat("abc", 0);
+// => ''
 ```
