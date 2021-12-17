@@ -5,7 +5,10 @@ module.exports = {
             children: [
                 "/warehouse/js/array/chunk",
                 "/warehouse/js/array/concat",
+                "/warehouse/js/array/difference",
+                "/warehouse/js/array/fill",
                 "/warehouse/js/array/flattenDepth",
+                "/warehouse/js/array/join",
                 "/warehouse/js/array/pop",
                 "/warehouse/js/array/push",
                 "/warehouse/js/array/remove",

@@ -39,7 +39,7 @@ Array.prototype._some = function (callback, target = this) {
 }
 ```
 
-### 例子
+### 测试
 
 ```js
 const arr = [1, 2, 3, 4, 5, 6];

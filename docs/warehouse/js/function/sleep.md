@@ -35,7 +35,7 @@ async function test() {
 ```
 
 
-### 例子
+### 测试
 
 ```js
 async function test() {

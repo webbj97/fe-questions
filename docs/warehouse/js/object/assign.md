@@ -28,7 +28,7 @@ const _assign = function(target, ...sources) {
 };
 ```
 
-### 例子
+### 测试
 
 ```js
 function Foo() {

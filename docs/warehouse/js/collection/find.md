@@ -33,7 +33,7 @@ Array.prototype._find = function (fn, target) {
 };
 ```
 
-### 例子
+### 测试
 
 ```js
 const ages = [3, 10, 18, 20];

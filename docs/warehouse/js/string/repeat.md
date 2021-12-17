@@ -36,7 +36,7 @@ const _repeat = (string = "", n = 1) => {
 };
 ```
 
-### 例子
+### 测试
 
 ```js
 _repeat("*", 3);

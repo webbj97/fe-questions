@@ -9,37 +9,52 @@
 </p>
 <div align=center>一份需要思考的前端闭关指南，<a href="https://webbj97.github.io/fe-questions/" target="_blank">最新项目在线地址</a></div>
 
-### 手撕代码汇总
+## 手撕代码汇总
+### 数组方法实现
 
-* 数组方法实现
-  1. [push](./docs/warehouse/js/1.md#push)
-  2. [pop](./docs/warehouse/js/1.md#pop)
-  3. [every](./docs/warehouse/js/1.md#every)
-  4. [some](./docs/warehouse/js/1.md#some)
-  5. [filter](./docs/warehouse/js/1.md#filter)
-  6. [forEach](./docs/warehouse/js/1.md#foreach)
-  7. [find](./docs/warehouse/js/1.md#find)
-  8. [flat](./docs/warehouse/js/1.md#flat)
-  9. [includes](./docs/warehouse/js/1.md#includes)
-  10. [empty(检验空数组)](./docs/warehouse/js/1.md#empty)
-  11. [unshift](./docs/warehouse/js/1.md#unshift)
-* 对象方法实现
-  1. [deepclone(深浅拷贝)](./docs/warehouse/js/1.md#deepclone)
-  2. [entries](./docs/warehouse/js/1.md#entries)
-* 函数方法实现
-  1. [call](./docs/warehouse/js/1.md#call)
-  2. [apply](./docs/warehouse/js/1.md#apply)
-  3. [bind](./docs/warehouse/js/1.md#bind)
-  4. [equals(对象是否相等)](./docs/warehouse/js/1.md#equals)
-  5. [compose(组合函数)](./docs/warehouse/js/1.md#compose)
-  6. [pipe(管道函数)](./docs/warehouse/js/1.md#pipe)
-  7. [fibonacci(斐波那契)](./docs/warehouse/js/1.md#fibonacci)
-  8. [debounce(防抖)](./docs/warehouse/js/1.md#debounce)
-  9. [throttle(节流)](./docs/warehouse/js/1.md#throttle)
-  10. [sleep(睡眠)](./docs/warehouse/js/1.md#sleep)
-* 字符串方法实现
-  1. [solution](./docs/warehouse/js/1.md#solution)
-  2. [reverseStr(反转字符串)](./docs/warehouse/js/1.md#reverseStr)
+1. [chunk](./docs/warehouse/js/array/chunk.md)
+2. [concat](./docs/warehouse/js/array/concat.md)
+3. [fill](./docs/warehouse/js/array/fill.md)
+4. [difference](./docs/warehouse/js/array/difference.md)
+5. [flattenDepth](./docs/warehouse/js/array/flattenDepth.md)
+6. [join](./docs/warehouse/js/array/join.md)
+7. [pop](./docs/warehouse/js/array/pop.md)
+8. [push](./docs/warehouse/js/array/push.md)
+9. [remove](./docs/warehouse/js/array/remove.md)
+10. [reverse](./docs/warehouse/js/array/reverse.md)
+
+### 遍历方法实现
+
+1. [every](./docs/warehouse/js/collection/every.md)
+2. [filter](./docs/warehouse/js/collection/filter.md)
+3. [find](./docs/warehouse/js/collection/find.md)
+4. [includes](./docs/warehouse/js/collection/includes.md)
+5. [some](./docs/warehouse/js/collection/some.md)
+
+### 对象方法实现
+
+1. [assign](./docs/warehouse/js/object/assign.md)
+2. [clonedeep](./docs/warehouse/js/object/clonedeep.md)
+3. [entries](./docs/warehouse/js/object/entries.md)
+
+### 函数方法实现
+
+1. [apply](./docs/warehouse/js/function/apply.md)
+2. [bind](./docs/warehouse/js/function/bind.md)
+3. [call](./docs/warehouse/js/function/call.md)
+4. [compose](./docs/warehouse/js/function/compose.md)
+5. [curry](./docs/warehouse/js/function/curry.md)
+6. [debounce](./docs/warehouse/js/function/debounce.md)
+7. [pipe](./docs/warehouse/js/function/pipe.md)
+8. [sleep](./docs/warehouse/js/function/sleep.md)
+9. [throttle](./docs/warehouse/js/function/throttle.md)
+
+### 字符串方法实现
+
+1. [padStart](./docs/warehouse/js/string/padStart.md)
+2. [repeat](./docs/warehouse/js/string/repeat.md)
+3. [split](./docs/warehouse/js/string/split.md)
+4. [reverse](./docs/warehouse/js/string/reverse.md)
 
 ### 剑指Offer
 

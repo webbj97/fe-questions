@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { Button, PageHeader } from "ant-design-vue";
+import { Button, PageHeader, Alert } from "ant-design-vue";
 const { presetPalettes } = require("./utils/index");
 const sidebar = require("../config/sidebar");
 
@@ -33,6 +33,7 @@ export default {
     components: {
         Button,
         PageHeader,
+        Alert
     },
     computed: {
         scope() {
@@ -68,6 +69,7 @@ export default {
                     child,
                 };
             });
+            console.log('result:', result);
             return result;
         },
     },
@@ -100,7 +102,7 @@ export default {
                 margin-bottom: 15px;
                 border: none;
                 color: #000;
-                transition: all 0.3;
+                transition: transform .3s;
                 &:hover {
                     transform: scale(1.1);
                     box-shadow: 2px 2px 2px #ccc;

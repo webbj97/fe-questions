@@ -26,7 +26,7 @@ const _entries = (obj) => {
 };
 ```
 
-### 例子
+### 测试
 
 ```js
 function Foo() {

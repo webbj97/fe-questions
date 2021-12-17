@@ -27,7 +27,7 @@ const _curry = func => {
 }
 ```
 
-### 例子
+### 测试
 
 ```js
 const abc = function (a, b, c) {

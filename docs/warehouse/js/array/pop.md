@@ -21,7 +21,7 @@ const _pop = function (array) {
 }
 ```
 
-### 例子
+### 测试
 
 ```js
 const sites = ['Google', 'Runoob', 'Taobao', 'Zhihu', 'Baidu'];

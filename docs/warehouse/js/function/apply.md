@@ -37,7 +37,7 @@ Function.prototype.myApply = function (context = window, args) {
 
 - Symbol 可以防止覆盖原有属性 👍
 
-### 例子
+### 测试
 
 ```js
 const consol = function (obj) { console.log(`Hi ${this.name} and ${obj.name}`) }

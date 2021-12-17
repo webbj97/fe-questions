@@ -26,7 +26,7 @@ const _push = function (array, ...params) {
 };
 ```
 
-### 例子
+### 测试
 
 ```js
 const arr = [1, 2, 3];

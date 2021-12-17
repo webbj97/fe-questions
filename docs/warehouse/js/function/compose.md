@@ -28,7 +28,7 @@ function compose(...arg) {
 }
 ```
 
-### 例子
+### 测试
 
 ```js
 const a = x => x + 'a';

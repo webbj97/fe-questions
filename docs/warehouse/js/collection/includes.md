@@ -35,7 +35,7 @@ const _includes = function (collection, value, fromIndex = 0) {
 };
 ```
 
-### 例子
+### 测试
 
 ```js
 _includes([1, 2, 3], 1);

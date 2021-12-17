@@ -31,7 +31,7 @@ const _padStart = function(str = "", length = 0, chars = " ") {
 };
 ```
 
-### 例子
+### 测试
 
 ```js
 _padStart("abc", 6);

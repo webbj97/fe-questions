@@ -19,31 +19,6 @@
 ### 实现
 
 ```js
-<<<<<<< HEAD
-const _remove = function (array, callback) {
-    const result = [];
-    if (!(array && array.length)) {
-      return result;
-    }
-    const index = -1,
-        indexes = [],
-        length = array.length;
-        
-    while (++index < length) {
-      var value = array[index];
-      //在循环中如果符合函数条件，则在result数组中增加该值，并在indexes中记录索引
-      if (callback(value, index, array)) {
-        result.push(value);
-        indexes.push(index);
-      }
-    }
-    // 去除指定位置的元素
-    basePullAt(array, indexes);
-    return result;
-  }
-  
-
-=======
 const _remove = function(array, callback) {
     const result = [];
     if (!(array != null && array.length)) {
@@ -65,30 +40,42 @@ const _remove = function(array, callback) {
     }
     return result;
 };
->>>>>>> 2b5e840 (添加remove)
+
+// by zy
+
+const _remove = function(array, callback) {
+    const result = [];
+    if (!(array && array.length)) {
+        return result;
+    }
+    const index = -1,
+        indexes = [],
+        length = array.length;
+
+    while (++index < length) {
+        var value = array[index];
+        //在循环中如果符合函数条件，则在result数组中增加该值，并在indexes中记录索引
+        if (callback(value, index, array)) {
+            result.push(value);
+            indexes.push(index);
+        }
+    }
+    // 去除指定位置的元素
+    basePullAt(array, indexes);
+    return result;
+};
+
 ```
 
-### 例子
+### 测试
 
 ```js
-<<<<<<< HEAD
-const array = [1,2,3,4];
-
-const evens = _remove(array,n=>n%2==0);
-
-console.log(evens);
-// => [2,4]
-
-console.log(array);
-// => [1,3]
-=======
-var array = [1, 2, 3, 4];
-var evens = _remove(array, (n, i) => !(n % 2));
+const array = [1, 2, 3, 4];
+const evens = _remove(array, (n, i) => !(n % 2));
 
 console.log(array);
 // => [1, 3]
 
 console.log(evens);
 // => [2, 4]
->>>>>>> 2b5e840 (添加remove)
 ```

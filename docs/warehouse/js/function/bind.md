@@ -27,7 +27,7 @@ Function.prototype._bind = function (context, ...arg) {
 }
 ```
 
-### 例子
+### 测试
 
 ```js
 var greet = function (greeting, punctuation) {

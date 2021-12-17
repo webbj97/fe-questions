@@ -27,7 +27,7 @@ const _reverse = (array) => {
 
 ```
 
-### 例子
+### 测试
 
 ```js
 const array = [1, 2, 3];

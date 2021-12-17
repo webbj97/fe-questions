@@ -29,7 +29,7 @@ const _concat = function (array, ...values) {
 }
 ```
 
-### 例子
+### 测试
 
 ```js
 var array = [1];

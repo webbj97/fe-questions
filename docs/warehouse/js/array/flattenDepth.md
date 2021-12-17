@@ -46,7 +46,7 @@ Array.prototype.myFlat = function (num = 1) {
 };
 ```
 
-### 例子
+### 测试
 
 ```js
 const res = [[1], [[2]]];

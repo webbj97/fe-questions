@@ -32,7 +32,7 @@ const _chunk = function (array, size = 1) {
 }
 ```
 
-### 例子
+### 测试
 
 ```js
 const arr = ['a', 'b', 'c', 'd']
