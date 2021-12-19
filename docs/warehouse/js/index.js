@@ -1,7 +1,11 @@
-const _difference = (array, diff = []) => {
-    if (!diff.length || !array.length) return [...array];
+const _forEach = (array = [], iteratee) => {
+    if (!array.length) return;
 
-    return array.filter((val) => !diff.includes(val));
+    for (let i = 0; i < array.length; i++) {
+        iteratee(array[i], i, array);
+    }
 };
 
-console.log(_difference([3, 2, 1], [4, 2]));
+_forEach([1, 2, 3, 4, 5], function(value) {
+    console.log(value);
+});
