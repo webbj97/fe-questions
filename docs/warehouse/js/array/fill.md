@@ -24,12 +24,21 @@ const _fill = (array = [], value, start = 0, end = array.length) => {
     const { length } = array;
     // 空数组
     if (!length) return array;
-    // 边界
-    const ends = end > length ? length : end;
-    if (start > end) return array;
 
-    for (let i = start; i < ends; i++) {
-        array[i] = value;
+    // 如果是负值，则代表倒数第n位
+    if (start < 0) {
+        start = -start > length ? 0 : length + start;
+    }
+    end = (end > length) ? length : end;
+    if (end < 0) {
+        end = end + length;
+    }
+    // 如果 start > end ,即不操作
+    end = start > end ? 0 : end;
+
+    while (start < end) {
+        array[start] = value;
+        start++;
     }
 
     return array;
