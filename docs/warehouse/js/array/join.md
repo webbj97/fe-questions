@@ -21,7 +21,17 @@ const _join = (array, separator = ",") => {
         return prev ? prev + separator + next : prev + next;
     }, "");
 };
-
+//zy 
+const _join2 = function (array, splitStr) {
+    if (array === null || array.length < 1) {
+        return ''
+    }
+    let res = array[0];
+    for (let i = 1; i < array.length; i++) {
+        res += splitStr + array[i]
+    }
+    return res;
+}
 ```
 
 ### 测试
