@@ -4,7 +4,7 @@
 
 返回通过测试（函数内判断）的数组的第一个元素的值。
 
-### 参数：
+### 参数
 
 * function(currentValue,index,arr):
   * currentValue: 必须。当前元素的值

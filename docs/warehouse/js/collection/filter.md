@@ -4,7 +4,7 @@
 
 创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素。
 
-### 参数：
+### 参数
 
 * function(currentValue,index,arr):
   * currentValue: 必须。当前元素的值

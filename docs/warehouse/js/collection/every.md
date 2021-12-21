@@ -4,7 +4,7 @@
 
 检测数组所有元素是否都符合指定条件
 
-### 参数：
+### 参数
 
 * function(currentValue,index,arr):
   * currentValue: 必须。当前元素的值
