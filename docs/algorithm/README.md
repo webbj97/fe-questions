@@ -47,7 +47,7 @@
 2. ✅[剑指Offer（18）删除链表的节点](./leetcode/offer18.md)
 3. ✅[剑指Offer（22）链表中倒数第k个节点](./leetcode/offer22.md)
 4. ✅[剑指Offer（24）反转链表](./leetcode/offer24.md)
-5. ✅[剑指Offer（25）合并两个拍排序的链表](./leetcode/offer25.md)
+5. ✅[剑指Offer（25）合并两个排序的链表](./leetcode/offer25.md)
 6. ❌[剑指Offer（35）复杂链表的复制](./leetcode/offer35.md)
 7. [剑指Offer（52）两个链表的第一个公共节点](./leetcode/offer52.md)
 8. 剑指Offer（五十五）-- 链表中环的入口节点
