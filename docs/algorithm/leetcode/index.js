@@ -1,23 +1,27 @@
-const maxSubArray = function(nums) {
-    if (!nums.length) {
-        return false;
+/**
+ * @param {number} x
+ * @param {number} n
+ * @return {number}
+ */
+var myPow = function(x, n) {
+    if (x === 0) return 0;
+    if (n === 0) return 1;
+    let res = 1.0;
+    // 处理负数
+    if (n < 0) {
+        x = 1 / x;
+        n = -n;
     }
-    let i = 1;
-    while (i < nums.length) {
-        const pre = nums[i - 1];
-        let cur = pre + nums[i];
-        if (cur > nums[i]) {
-            nums[i] = cur;
-        } else {
-            nums[i] = nums[i];
+    while (n > 0) {
+        if (n === 1) {
+            res *= x;
         }
-        i++;
+        x = x * x; // 底数平方
+        n = n >>> 1; // 降幂
     }
-    return Math.max(...nums);
+    return res;
 };
 
-const nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
-// 解释: 连续子数组 [4,-1,2,1] 的和最大，为 6。
-
-const res = maxSubArray(nums);
-console.log("res:", res);
+let m = 2,
+    n = 3;
+console.log(`${m}的${n}次方=`, myPow(m, n));

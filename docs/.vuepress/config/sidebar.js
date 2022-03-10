@@ -117,6 +117,8 @@ module.exports = {
                 "/algorithm/leetcode/offer05",
                 "/algorithm/leetcode/offer06",
                 "/algorithm/leetcode/offer09",
+                "/algorithm/leetcode/offer10-1",
+                "/algorithm/leetcode/offer10-2",
                 "/algorithm/leetcode/offer11",
                 "/algorithm/leetcode/offer21",
                 "/algorithm/leetcode/offer24",
