@@ -46,8 +46,6 @@ export default {
 </script>
 
 <style lang="sass">
-.theme-antdocs-content
-
 .home-readme
   position: relative
   display: flex

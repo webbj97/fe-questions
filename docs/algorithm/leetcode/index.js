@@ -1,13 +1,23 @@
-/**
- * @param {number[]} nums
- * @return {number}
- */
-var singleNumber = function (nums) {
-    const compare = [...new Set(nums)].map(v => v * 3).reduce((a, b) => a + b)
-    const res = nums.reduce((a, b) => a + b);
-    return (compare - res) / 2
+const maxSubArray = function(nums) {
+    if (!nums.length) {
+        return false;
+    }
+    let i = 1;
+    while (i < nums.length) {
+        const pre = nums[i - 1];
+        let cur = pre + nums[i];
+        if (cur > nums[i]) {
+            nums[i] = cur;
+        } else {
+            nums[i] = nums[i];
+        }
+        i++;
+    }
+    return Math.max(...nums);
 };
 
-res = singleNumber([9, 1, 7, 9, 7, 9, 7])
+const nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+// 解释: 连续子数组 [4,-1,2,1] 的和最大，为 6。
 
-console.log('res:', res);
+const res = maxSubArray(nums);
+console.log("res:", res);
