@@ -7,9 +7,11 @@
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.2",
+    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
     "jest": "^27.1.0",
     "vue-template-compiler": "^2.6.14",
     "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-plugin-copyright": "^1.0.2",
     "vuepress-plugin-demo-container": "^0.2.0",
     "vuepress-plugin-homebadge": "^0.1.0"
   },
